@@ -23,8 +23,7 @@ const Post = ({
                  src={urlFor(mainImage)}
                  alt=""
                  className="img"
-                //  width={1000}
-                //  height={500}
+          
                  />
       </ImageSection>
 

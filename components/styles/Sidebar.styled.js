@@ -7,7 +7,7 @@ width: 100%;
   width: 100%;
   height: 60vh; 
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   position: fixed;
   top: 0;
   right: 100%;
@@ -43,6 +43,9 @@ a {
   color: #fff;
   text-decoration: none;
 }
+@media only screen and (max-width: 768px) {
+padding-left: 20px;
+}
 `
 
 
@@ -61,6 +64,9 @@ cursor: pointer;
   margin-right: 335px;
   padding: 10px;
   cursor: pointer;
+@media only screen and (max-width: 768px) {
+ 
+}
  `
  
 
