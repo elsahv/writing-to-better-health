@@ -46,7 +46,7 @@ text-shadow: 2px 2px 2px black;
  export const IndexPostGrid = styled.div`
  margin: 45px;
 display: grid;
-grid-template-columns: repeat(3, 400px);
+grid-template-columns: repeat(3, 350px);
 grid-gap: 1em;
 grid-area: a;
 
@@ -76,7 +76,7 @@ grid-area: a;
 @media only screen and (max-width: 1024px) {
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(2, 340px);
+  grid-template-columns: repeat(2, 280px);
   grid-gap: 1em;
 }
 
@@ -84,7 +84,7 @@ grid-area: a;
 
 @media only screen and (max-width: 600px) {
   display: grid;
-  grid-template-columns: 320px;
+  grid-template-columns: 300px;
   grid-gap: 1em;
   .square {
     background: #2d6a4f;

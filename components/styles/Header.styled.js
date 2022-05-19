@@ -13,6 +13,7 @@ text-decoration: none;
 
 @media only screen and (max-width: 1024px) {
   height: 100%;
+  width: 250px;
   position: fixed;
   left: 0;
   top: 0;
@@ -32,9 +33,10 @@ export const FormSection = styled.div`
 
 export const Logo = styled.h1`
 padding-top: 200px;
-font-size: 26px;
-margin-left: 18px;
+margin-left: 12px;
+font-size: 25px;
 font-weight: 900;
+// background: green;
  a{
    color: #fff;
    text-decoration: none;
@@ -45,12 +47,13 @@ font-weight: 900;
 `
 
 export const NavLinks = styled.li`
-font-size: 23px;
+// background: blue;
+padding-top: 10px;
+font-size: 22px;
 display: flex;
 flex-direction: column;
 text-transform: capitalize;
 text-decoration: none;  
-padding-left: 10px;
   a {
   margin:0 10px;
   text-decoration: none;  
@@ -63,7 +66,8 @@ padding-left: 10px;
 }
  
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
+font-size: 18px;
 }
 `
  
@@ -72,7 +76,7 @@ export const SmIcons = styled.div`
 font-size: 23px;
 width: 100px;
 text-decoration: none;  
-padding-left: 20px;
+padding-left: 10px;
 padding-top: 10px;
  a {
    margin: 3px;
@@ -100,6 +104,12 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+@media only screen and (max-width: 1024px) {
+  font-size: 16px;
+  padding: none;
+  }
+
 @media only screen and (max-width: 768px) {
   display: none;
   }

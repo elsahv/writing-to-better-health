@@ -6,8 +6,9 @@ import styled from 'styled-components'
 
 //STYLES
 const FormStyles = styled.div`
+background: #f6bea5;
 padding: 15px;
-width: 370px;
+width: 297px;
 height: 210px;
 button {
   margin-left: 10px;
