@@ -2,7 +2,6 @@
 
 import GlobalStyles from './styles/Global'
 import Header from './Header'
-import Footer from './Footer'
 
 
  
@@ -13,8 +12,6 @@ export default function Layout({ children }) {
       <GlobalStyles />
     <Header />
       <main>{children}</main>
-      <Footer />
-
 
     </>
   )

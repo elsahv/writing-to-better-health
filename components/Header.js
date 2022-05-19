@@ -20,9 +20,9 @@ const Header = () => {
    Writing to Better Health
    </Link>
    </Logo> 
-       <Link href="/plants">Plants</Link>
-       <Link href="/fish">Fish</Link>
-       <Link href="/outdoor-section">The Outdoor Section</Link>
+       <Link href="/portion-ctrl">Portion Ctrl</Link>
+       <Link href="/nutritional-biochemistry">Nutritional Biochemistry</Link>
+       <Link href="/cooking-notes">Cooking Notes</Link>
           <SmIcons> 
           <a href="http://pinterest.com"> 
         <FaPinterestP />
