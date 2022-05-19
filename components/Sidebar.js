@@ -6,52 +6,65 @@ import { FaBars } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
 import {
     Wrapper,
-    Logo,
+    NavLinks,
     MenuOpen,
     MenuClose,
-    SidebarLinks
+    SidebarLogo
   } from './styles/Sidebar.styled'
 
 
-const Sidebar = () => {
-  const [sidebar, setSidebar] = useState(false)
-  const showSidebar = () => setSidebar(!sidebar)
+
+  const Sidebar = () => {
+    const [sidebar, setSidebar] = useState(false)
+    const showSidebar = () => setSidebar(!sidebar)
+
   return (
-    <Wrapper>
-      <MenuOpen>
-      <FaBars onClick={showSidebar} />  
-      </MenuOpen>
+    <>
+        <Wrapper>
+            <MenuOpen>
+            <FaBars onClick={showSidebar} />
+            <SidebarLogo>
+           Writing to Better Health
+            </SidebarLogo>
+            </MenuOpen>
 
-     <Logo>
-       <Link href='/'>
-       The Indoor Jungle Project
-       </Link>
-       </Logo>
-
-     <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
+    <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
         <div className="nav-menu-items" onClick={showSidebar}>
           <div className="navbar-toggle">
           <MenuClose>
               <AiOutlineClose />
           </MenuClose>  
-              </div>
-              <SidebarLinks>
-              <Link href="/">
-                      <a>Home</a>
-                    </Link>
-                  <Link href="/plants">
-                      <a>Plants</a>
-                    </Link>
-                    <Link href="/fish">
-                      <a>Fish</a>
-                    </Link>
-                    <Link href="/outdoor-section">
-                      <a>The Outdoor Section</a>
-                    </Link>
-              </SidebarLinks>
-              </div>
-              </nav>
-    </Wrapper>
+            </div>
+
+            <NavLinks>
+             <h2>Navigation</h2>
+            <Link href="/portion-ctrl">
+                  <a>Portion Ctrl</a>
+                </Link>
+
+                <Link href="/nutritional-biochemistry">
+                  <a>Nutritional Biochemistry</a>
+                </Link>
+
+                <Link href="/cooking-notes">
+                  <a>Cooking Notes</a>
+                </Link>
+             
+                <Link href="/contact">
+                  <a>Contact</a>
+                </Link>
+                
+              </NavLinks>
+
+          </div>
+      
+    </nav>
+
+        </Wrapper>
+
+ 
+
+    </>
   )
 }
 

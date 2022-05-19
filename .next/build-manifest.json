@@ -29,26 +29,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
-    ],
-    "/cooking-notes": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/cooking-notes.js"
-    ],
-    "/nutritional-biochemistry": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/nutritional-biochemistry.js"
-    ],
-    "/portion-ctrl": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/portion-ctrl.js"
-    ],
-    "/post/[slug]": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/post/[slug].js"
     ]
   },
   "ampFirstPages": []

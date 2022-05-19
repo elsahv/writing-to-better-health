@@ -1,75 +1,107 @@
 import styled from 'styled-components'
 
-
-
 //STYLES
-export const NavSection = styled.header`
-width: 100%;
-top: 0;
-position: sticky;
-border-bottom: solid 2px gold;
+ export const NavSection = styled.nav`
+width: 300px;
+height: 1200px;
+position: fixed;    
+left: 0;
+border-right: solid 3px black;
 background: teal;
-z-index: 5000;  
-padding: 45px 0 20px 0;
+z-index: 1000;
+text-decoration: none;  
 
-`
-
-export const NavLinks = styled.section`
-padding-top: 8px;
-font-size: 20px;
-display: flex;
-justify-content: center;
-align-items: center;
-a {
-  margin:0 10px;
-  text-decoration: none;  
-  color: #6a040f;
-  &:hover{
-    color: #2d6a4f;
-    transition: 1s;
-  }
-}
 @media only screen and (max-width: 1024px) {
-  font-size: 18px;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
 }
 
 @media only screen and (max-width: 768px) {
-  display: none;
-}
- 
+display: none;
+  }
+
 `
 
+export const FormSection = styled.div`
+@media only screen and (max-width: 768px) {
+  display: none;
+  }
+`
 
 export const Logo = styled.h1`
-font-size: 30px;
-margin-right: 55px;
+padding-top: 200px;
+font-size: 26px;
+margin-left: 18px;
+font-weight: 900;
  a{
-   color: #2d6a4f;
+   color: #fff;
    text-decoration: none;
 }
-
-@media only screen and (max-width: 1024px) {
-  font-size: 18px;
-  a {
-  }
- }
+@media only screen and (max-width: 768px) {
  
+}
 `
 
-export const SmIcons = styled.section`
+export const NavLinks = styled.li`
+font-size: 23px;
+display: flex;
+flex-direction: column;
+text-transform: capitalize;
+text-decoration: none;  
+padding-left: 10px;
+  a {
+  margin:0 10px;
+  text-decoration: none;  
+  color:  #f6bea5;
+  font-weight: 500;
+  &:hover{
+    color: #fff;
+    transition: 1s;
+  }
+}
+ 
+
+@media only screen and (max-width: 768px) {
+}
+`
+ 
+
+export const SmIcons = styled.div`
+font-size: 23px;
 width: 100px;
-margin-left: 15px;
-margin-top: 10px;
+text-decoration: none;  
+padding-left: 20px;
+padding-top: 10px;
  a {
-   margin: 2px;
-   color: #6c757d;
+   margin: 3px;
+   color: aquamarine;
    &:hover{
-    color: #2d6a4f;
+    color: #f6bea5;
     transition: 1s;
   }
  }
  @media only screen and (max-width: 768px) {
   display: none;
+  }
+`
+
+export const FooterSection = styled.footer`
+padding-left: 20px;
+margin-top: 25px;
+width: 200px;
+color: #fff;
+a {
+  color: aquamarine;
+  text-decoration: none;
+ 
 }
+a:hover {
+  text-decoration: underline;
+}
+@media only screen and (max-width: 768px) {
+  display: none;
+  }
 `
 //END STYLES
