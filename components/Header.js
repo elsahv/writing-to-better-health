@@ -17,7 +17,7 @@ const Header = () => {
      <NavLinks>
  <Logo> 
  <Link href="/">
-   The Indoor Jungle Project
+   Writing to Better Health
    </Link>
    </Logo> 
        <Link href="/plants">Plants</Link>

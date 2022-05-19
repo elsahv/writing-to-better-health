@@ -7,8 +7,8 @@ export const NavSection = styled.header`
 width: 100%;
 top: 0;
 position: sticky;
-border-bottom: solid 2px #6a040f;
-background: #fff;
+border-bottom: solid 2px gold;
+background: teal;
 z-index: 5000;  
 padding: 45px 0 20px 0;
 
