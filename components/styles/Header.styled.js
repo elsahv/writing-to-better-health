@@ -32,7 +32,7 @@ export const FormSection = styled.div`
 `
 
 export const Logo = styled.h1`
-padding-top: 200px;
+padding-top: 550px;
 margin-left: 12px;
 font-size: 25px;
 font-weight: 900;

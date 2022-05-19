@@ -1,15 +1,12 @@
 import { sanityClient, urlFor } from "../../client"
 import { PortableText } from '@portabletext/react'
-
 import {
   Wrapper,
   ImageSection,
   Title,
+  DateSection,
   BodyContent,
 } from '../../components/styles/Post.styled'
-
-
-
 
 
 const Post = ({
@@ -26,16 +23,17 @@ const Post = ({
                  src={urlFor(mainImage)}
                  alt=""
                  className="img"
-                 width={1000}
-                 height={500}
+                //  width={1000}
+                //  height={500}
                  />
       </ImageSection>
 
       <BodyContent>
 
       <Title>{title}</Title>
+      <DateSection>
       Published on: date
-      
+      </DateSection>
       <hr />
          <PortableText value={body} />
         </BodyContent>

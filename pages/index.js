@@ -9,7 +9,7 @@ import {
   IndexWrapperGrid,
   IndexPostGrid,
   TestWrapper
-} from '../components/styles/IndexGrid.styled'
+} from '../components/styles/Grid.styled'
 
 
 
@@ -54,7 +54,7 @@ export default function Home({posts}) {
 
 
 export const getServerSideProps = async () => {
-  const query = '*[_type in ["portionCtrl", "food", "nutritionalBiochemistry"]] | order(_createdAt desc)[0..5]'
+  const query = '*[_type in ["portionCtrl", "food", "nutritionalBiochemistry"]] | order(_createdAt desc)'
   const posts = await sanityClient.fetch(query)
 
   if (!posts.length) {

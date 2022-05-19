@@ -76,8 +76,8 @@ grid-area: a;
 @media only screen and (max-width: 1024px) {
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(2, 280px);
-  grid-gap: 1em;
+  grid-template-columns: repeat(2, 250px);
+  grid-gap: 1.5em;
 }
 
 
