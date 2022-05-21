@@ -16,6 +16,7 @@ padding: 25px;
 
 
 const Grid = styled.div`
+padding-top: 20px;
 display: grid;
 grid-template-columns: repeat(2, 1fr);
 grid-template-rows: repeat(2, 1fr);
@@ -23,7 +24,6 @@ grid-template-areas:
 'a b'
 'c d';
 grid-gap: 1em;
-
 @media only screen and (max-width: 1024px) {
 display: grid;
 grid-template-columns: 1fr;
@@ -41,32 +41,33 @@ const Title = styled.h2`
 }
 `
 
-const SquareA = styled.div`
+const About = styled.div`
 grid-area: a;
 background: teal;
 display: flex;
 justify-content: center;
 align-items: center;
+flex-direction: column;
+padding: 10px;
 height: 450px;
 width: 650px;
 `
 
 const SquareB = styled.div`
 grid-area: b;
-background: orange;
+background-image: url('/images/plants.jpg');
 `
 const SquareC = styled.div`
 grid-area: c;
-background: pink;
+background-image: url('/images/plants.jpg');
 `
-const SquareD = styled.div`
+const Email = styled.div`
 grid-area: d;
 background: maroon;
 display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
-
 `
 
 
@@ -80,24 +81,26 @@ const contact = () => {
     <>
     <Wrapper>
       <Grid>
-        <SquareA>
+        <About>
           <Title>
-          Contact 
+          About
           </Title>
-          Email form
-        </SquareA>
+          <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, recusandae.</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, nemo. Facere ex doloribus cupiditate accusantium! Incidunt placeat, fuga eos delectus at corrupti pariatur ducimus exercitationem repudiandae, esse vitae numquam fugiat.</p>
+        </About>
+
               <SquareB>  
               Photo
               </SquareB>  
                   <SquareC>
                   Photo
                 </SquareC>
-                    <SquareD>  
+                    <Email>  
                       <Title>
-                      About 
+                      Contact 
                       </Title>
-                     
-                    </SquareD>  
+                      Email form
+                    </Email>  
 
       </Grid>
       </Wrapper>
