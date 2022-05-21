@@ -45,6 +45,7 @@ a {
 }
 @media only screen and (max-width: 768px) {
 padding-left: 20px;
+margin: auto;
 }
 `
 

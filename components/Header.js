@@ -28,6 +28,7 @@ const Header = () => {
        <Link href="/portion-ctrl">Portion Ctrl</Link>
        <Link href="/nutritional-biochemistry">Nutritional Biochemistry</Link>
        <Link href="/cooking-notes">Cooking Notes</Link>
+       <Link href="/contact">Contact</Link>
           <SmIcons> 
           <a href="http://pinterest.com"> 
         <FaPinterestP />
