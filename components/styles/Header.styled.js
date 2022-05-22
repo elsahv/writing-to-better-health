@@ -33,6 +33,7 @@ export const FormSection = styled.div`
 
 export const Logo = styled.h1`
 margin-left: 12px;
+padding-top: 355px;
 font-size: 25px;
 font-weight: 900;
  a{
