@@ -5,7 +5,7 @@ import styled from 'styled-components'
 //STYLES
 export const FooterBanner = styled.footer`
 width: 100%;
-height: 200px;
+height: 201x;
 background: teal;
 border-top: solid 3px black;
 @media only screen and (max-width: 768px) {
