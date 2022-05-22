@@ -1,5 +1,5 @@
 import Link from 'next/link'
-// import MailchimpSection from './MailchimpSection';
+import MailchimpForm from './MailchimpForm';
 
 import { FaFacebookF,
     FaInstagram,
@@ -16,7 +16,7 @@ const Header = () => {
   return (
     <NavSection>
 
-      {/* <MailchimpSection /> */}
+      <MailchimpForm />
 
  <Logo> 
  <Link href="/">

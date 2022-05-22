@@ -16,6 +16,7 @@
     "@sanity/image-url": "^1.0.1",
     "@sanity/portable-text-editor": "^2.29.8",
     "aos": "^2.3.4",
+    "axios": "^0.27.2",
     "emailjs": "^4.0.0",
     "groq": "^2.29.3",
     "next": "12.1.6",
