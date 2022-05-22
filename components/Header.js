@@ -1,6 +1,5 @@
 import Link from 'next/link'
-import MailchimpForm from './MailchimpForm';
-
+import MailchimpForm from './MailchimpForm'
 import { FaFacebookF,
     FaInstagram,
     FaPinterestP } from "react-icons/fa";
@@ -16,8 +15,7 @@ const Header = () => {
   return (
     <NavSection>
 
-      <MailchimpForm />
-
+<MailchimpForm />
  <Logo> 
  <Link href="/">
    Writing to Better Health

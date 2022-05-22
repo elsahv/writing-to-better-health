@@ -116,10 +116,10 @@ function Subscribe() {
   return (
     <SubscribeContainer>
       <h4 className="sub-header">Subscribe to the newsletter</h4>
-      {/* <p className="sub-text">
+      <p className="sub-text">
         Get to notified on quality articles about frontend development and more
         sent to your inbox. I will send you an email once a month, no spam.
-      </p> */}
+      </p>
       <form onSubmit={subscribe}>
         <SubFormContainer>
           <div className="form-input">
