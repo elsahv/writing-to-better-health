@@ -13,7 +13,7 @@ display: flex;
 justify-content: center;
 align-items: flex-end;
 margin-left: 300px;
-margin-bottom: 50px;
+margin-bottom: 55px;
 padding-top: 55px;
 cursor: pointer;
 @media only screen and (max-width: 768px) {

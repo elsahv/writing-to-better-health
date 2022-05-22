@@ -85,7 +85,7 @@ const contact = () => {
           <Title>
           About
           </Title>
-          <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, recusandae.</h4>
+          <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, rfsdfecusandae.</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, nemo. Facere ex doloribus cupiditate accusantium! Incidunt placeat, fuga eos delectus at corrupti pariatur ducimus exercitationem repudiandae, esse vitae numquam fugiat.</p>
         </About>
 
