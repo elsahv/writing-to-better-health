@@ -12,7 +12,7 @@ const Wrapper = styled.div`
 display: flex;
 justify-content: center;
 align-items: flex-end;
-margin-left: 300px;
+margin-left: 302px;
 margin-bottom: 55px;
 padding-top: 55px;
 cursor: pointer;
