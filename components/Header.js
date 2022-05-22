@@ -44,7 +44,7 @@ const Header = () => {
 
 
      <FooterSection>
-    Copyright @2022 <br />
+    Copyright @2022- <br />
     <a href="https://www.elsahovey.com"> 
     created by Elsa Hovey
  </a>
