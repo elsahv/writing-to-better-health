@@ -3,7 +3,7 @@ import styled from 'styled-components'
 //STYLES
  export const NavSection = styled.nav`
 width: 300px;
-height: 1200px;
+height: 100%;
 position: fixed;    
 left: 0;
 border-right: solid 3px black;
@@ -32,11 +32,9 @@ export const FormSection = styled.div`
 `
 
 export const Logo = styled.h1`
-padding-top: 550px;
 margin-left: 12px;
 font-size: 25px;
 font-weight: 900;
-// background: green;
  a{
    color: #fff;
    text-decoration: none;
@@ -47,7 +45,6 @@ font-weight: 900;
 `
 
 export const NavLinks = styled.li`
-// background: blue;
 padding-top: 10px;
 font-size: 22px;
 display: flex;
