@@ -14,7 +14,7 @@ justify-content: center;
 align-items: flex-end;
 margin-left: 302px;
 margin-bottom: 55px;
-padding-top: 55px;
+padding-top: 56px;
 cursor: pointer;
 @media only screen and (max-width: 768px) {
   padding: auto;
