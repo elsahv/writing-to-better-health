@@ -41,7 +41,7 @@ export default function Home({posts}) {
                />
                <SpliceContent>
             <PostTitle>{post.title}</PostTitle> 
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eaque ad corrupti voluptates. Ad, distinctio quod nam reprehenderit perspiciatis illo aut iusto minima provident architecto corporis numquam fuga! Error, temporibus.
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eaque ad corrupti voluptates. Ad, distinctio quod nam reprehenderit perspicidatis illo aut iusto minima provident architecto corporis numquam fuga! Error, temporibus.
               <span>Read More...</span>
                 </p> 
                </SpliceContent>

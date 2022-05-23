@@ -9,12 +9,17 @@ padding: 35px 0;
 `
 
 export const Wrapper = styled.div`
- padding-left: 105px;
+ padding-left: 195px;
 `
 
 export const PostLinks = styled.div`
 width: 1200px;
 margin: 20px;
+@media only screen and (max-width: 1024px) {
+margin: 0 100px;
+width: 700px;
+
+}
  `
 
 export const PostTitle = styled.h2`
@@ -35,6 +40,9 @@ span {
         transition: 1s;
         padding-left: 10px;
     }
+}
+@media only screen and (max-width: 1024px) {
+     
 }
  `
 

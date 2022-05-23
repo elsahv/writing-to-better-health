@@ -1,10 +1,11 @@
-import styled from 'styled-components'
+  import styled from 'styled-components'
 
 
 export const Title = styled.div` 
 text-align: center;
 font-size: 25px;
-padding-top: 25px;  
+padding-top: 25px; 
+padding-left: 145px; 
 `
 export const CategoriesSection = styled.div` 
  position: absolute;
@@ -16,6 +17,9 @@ export const CategoriesSection = styled.div`
  li {
    margin: 10px;
  }
+@media only screen and (max-width: 1024px) {
+margin-left: 300px;
+}
 `
 
 export const PostTitle = styled.div` 
@@ -62,6 +66,8 @@ grid-gap: 1em;
 
 
 @media only screen and (max-width: 1024px) {
+  padding-left: 435px;
+  padding-top: 45px;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(2, 250px);
