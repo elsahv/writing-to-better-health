@@ -1,13 +1,16 @@
 import Head from 'next/head'
 import Link from "next/link"
 
+
 import { sanityClient, urlFor } from "../client"
 import {
   PageTitle,
   Wrapper,
   PostLinks,
   PostTitle,
-  ImgWrapper
+  ImgWrapper,
+  SplicedContent,
+  CTA
 } from '../components/styles/Index.styled'
 
 
@@ -40,12 +43,23 @@ export default function Home({posts}) {
                className="image"
                />
                </ImgWrapper>
+               <SplicedContent>
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos velit magni a voluptas debitis neque tempore laudantium, quaerat ratione atque dolor ut fugit. Quo vero impedit, nisi tempora maxime itaque...
+
+     </SplicedContent>
+   
               </div>
+              <CTA>
+                Read more
+              </CTA>
             </span>
+           
            </Link>
         ))}
           </PostLinks>
+         
       </Wrapper>
+      
     </>
   )
 }

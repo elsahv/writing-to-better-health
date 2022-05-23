@@ -32,8 +32,6 @@ export default function Home({posts}) {
         posts.map((post, index) => (   
           <Link href={`post/${post.slug.current}`}>
             <span key={index}>
-
-
               <ImgWrapper>
               <img 
                src={urlFor(post.mainImage)}
@@ -45,7 +43,7 @@ export default function Home({posts}) {
                <SpliceContent>
             <PostTitle>{post.title}</PostTitle> 
              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eaque ad corrupti voluptates. Ad, distinctio quod nam reprehenderit perspiciatis illo aut iusto minima provident architecto corporis numquam fuga! Error, temporibus.
-                Read More...
+              <span>Read More...</span>
                 </p> 
                </SpliceContent>
               </ImgWrapper>
