@@ -25,15 +25,7 @@ padding-top: 40px;
       opacity: 0.6;
       cursor: not-allowed;
     }
- 
- 
-   
 `
-
- 
- 
- 
-
 
 export const FormInput = styled.input`
 display: flex;
@@ -46,7 +38,10 @@ padding: 0.5rem;
 border-radius: 4px;
 border: 1px solid #6a4feb2e;
 font-size: 16px;
-
+@media only screen and (max-width: 1024px) {
+  width: 200px;
+  font-size: 12px;
+}
 `
 
 export const Title = styled.h4`

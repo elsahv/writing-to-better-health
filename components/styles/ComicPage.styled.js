@@ -41,4 +41,8 @@ span {
 export const ImgWrapper = styled.div`
 margin: 15px;
 display: flex;
+.image {
+    width: 290px;
+    height: 300px;
+}
 `

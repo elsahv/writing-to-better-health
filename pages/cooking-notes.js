@@ -33,7 +33,6 @@ export default function Home({posts}) {
       <IndexPostGrid> 
         {posts &&
         posts.map((post, index) => (   
-          // eslint-disable-next-line react/jsx-key
           <Link href={`post/${post.slug.current}`}>
             <span key={index}>
               <div className="square"> 

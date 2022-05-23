@@ -13,7 +13,7 @@ margin-left: 450px;
 margin-bottom: 55px;
 padding-top: 56px;
 cursor: pointer;
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   padding: auto;
   margin: auto;
 }

@@ -37,8 +37,7 @@ export default function Home({posts}) {
                src={urlFor(post.mainImage)}
                alt="main pic"
                className="image"
-               width="600"
-               height="200"
+             
                />
                <SpliceContent>
             <PostTitle>{post.title}</PostTitle> 
