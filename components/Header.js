@@ -5,9 +5,12 @@ import { FaFacebookF,
     FaPinterestP } from "react-icons/fa";
 import {
   NavSection,
-   NavLinks,
-    Logo, SmIcons,
-    FooterSection
+  NavLinks,
+  Menu,
+  Logo,
+  Quote,
+  SmIcons,
+  FooterSection
 } from './styles/Header.styled'
 
 
@@ -16,11 +19,18 @@ const Header = () => {
     <NavSection>
 
 <MailchimpForm />
+
+<Menu>
  <Logo> 
  <Link href="/">
    Writing to Better Health
    </Link>
    </Logo> 
+
+   <Quote> 
+   An illustrative blog about food and mental wellness...
+   </Quote> 
+   
    <NavLinks>
 
        <Link href="/portion-ctrl">Portion Ctrl</Link>
@@ -47,6 +57,8 @@ const Header = () => {
     created by Elsa Hovey
  </a>
     </FooterSection>
+    
+    </Menu>
      </NavSection>
   )
 }

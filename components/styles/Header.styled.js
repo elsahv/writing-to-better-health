@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 //STYLES
  export const NavSection = styled.nav`
-width: 300px;
+width: 420px;
 height: 100%;
 position: fixed;    
 left: 0;
@@ -31,13 +31,23 @@ export const FormSection = styled.div`
   }
 `
 
+
+export const Menu = styled.div`
+display: flex;
+justify-content: center;
+flex-direction: column;
+margin-top: 355px;
+margin-left: 20px;
+@media only screen and (max-width: 768px) {
+ 
+}
+`
+
+
 export const Logo = styled.h1`
-margin-left: 12px;
-padding-top: 355px;
 font-size: 25px;
-font-weight: 900;
  a{
-   color: #fff;
+   color:  #f6bea5;
    text-decoration: none;
 }
 @media only screen and (max-width: 768px) {
@@ -45,20 +55,27 @@ font-weight: 900;
 }
 `
 
+export const Quote = styled.span`
+ width: 100%;
+ display: flex;
+ justify-content: flex-start;
+@media only screen and (max-  width: 768px) {
+ 
+}
+`
+
+
 export const NavLinks = styled.li`
-padding-top: 10px;
 font-size: 22px;
 display: flex;
 flex-direction: column;
 text-transform: capitalize;
 text-decoration: none;  
   a {
-  margin:0 10px;
   text-decoration: none;  
-  color:  #f6bea5;
-  font-weight: 500;
+  color: #fff;
   &:hover{
-    color: #fff;
+    color: aquamarine;
     transition: 1s;
   }
 }
@@ -74,11 +91,8 @@ export const SmIcons = styled.div`
 font-size: 23px;
 width: 100px;
 text-decoration: none;  
-padding-left: 10px;
-padding-top: 10px;
  a {
-   margin: 3px;
-   color: aquamarine;
+   color: #fff;
    &:hover{
     color: #f6bea5;
     transition: 1s;
@@ -90,8 +104,6 @@ padding-top: 10px;
 `
 
 export const FooterSection = styled.footer`
-padding-left: 20px;
-margin-top: 25px;
 width: 200px;
 color: #fff;
 a {
@@ -105,7 +117,6 @@ a:hover {
 
 @media only screen and (max-width: 1024px) {
   font-size: 16px;
-  padding: none;
   }
 
 @media only screen and (max-width: 768px) {
