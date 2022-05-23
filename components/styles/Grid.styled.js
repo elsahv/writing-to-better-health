@@ -6,7 +6,17 @@ text-align: center;
 font-size: 25px;
 padding-top: 25px;  
 `
-
+export const CategoriesSection = styled.div` 
+ position: absolute;
+ top: 0;
+ width: 100px;
+ height: 200px;
+ margin-left: 100px;
+ margin-top: 200px;
+ li {
+   margin: 10px;
+ }
+`
 
 export const PostTitle = styled.div` 
 text-transform: capitalize;
@@ -21,38 +31,17 @@ text-shadow: 2px 2px 2px black;
   width: 200px;
 }
 `
-
- export const IndexWrapperGrid = styled.div` 
- display: grid;
- grid-template-columns: repeat(4, 1fr);
- grid-template-rows: auto;
- grid-template-areas: 
- 'a a a b';
-
-@media only screen and (max-width: 1024px) {
-  display: grid;
- grid-template-columns: 1fr;
- grid-template-areas: 
- 'a'  
- 'a'  
- 'a'  
- 'b';  
- ;
-}
-@media only screen and (max-width: 768px) {
-}
-`
+ 
 
  export const IndexPostGrid = styled.div`
  margin: 45px;
+ padding-left: 25px;
 display: grid;
 grid-template-columns: repeat(3, 350px);
 grid-gap: 1em;
-grid-area: a;
 
 .square {
   cursor: pointer;
-  border-radius: 25px;
   background: #2d6a4f;
   display: flex;
   flex-direction: column;
@@ -63,7 +52,6 @@ grid-area: a;
   }
   .image {
     object-fit: fill;
-    border-radius: 25px;
     height: 305px;
 }
   a {
@@ -93,7 +81,6 @@ grid-area: a;
     border: solid 2px black;
   }
   .image {
-    border-radius: 25px;
     height: 25px;
   }
 }

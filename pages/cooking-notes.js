@@ -3,14 +3,14 @@ import Link from "next/link"
 import { sanityClient, urlFor } from "../client"
 import {
   Title,
+  CategoriesSection,
   PostTitle,
-  IndexWrapperGrid,
   IndexPostGrid,
   TestWrapper
 } from '../components/styles/Grid.styled'
 
 
-export default function Home({posts}) {
+export default function Home({posts}) { 
   return (
     <>
       <Head>
@@ -19,8 +19,16 @@ export default function Home({posts}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Title>Cooking Notes</Title>
+       
+      <CategoriesSection>
+        <h2>Categories</h2>
+        <ul>
+          <li>Recipes</li>
+          <li>Nutritional Biochemistry</li>
+        </ul>
+      </CategoriesSection>
 
-      <IndexWrapperGrid>  
+
       <TestWrapper>
       <IndexPostGrid> 
         {posts &&
@@ -41,7 +49,6 @@ export default function Home({posts}) {
         ))}
           </IndexPostGrid>
       </TestWrapper>
-      </IndexWrapperGrid>
     </>
   )
 }

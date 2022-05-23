@@ -33,7 +33,7 @@ const Header = () => {
    
    <NavLinks>
        <Link href="/portion-ctrl">Portion Ctrl</Link>
-       <Link href="/nutritional-biochemistry">Nutritional Biochemistry</Link>
+       {/* <Link href="/nutritional-biochemistry">Nutritional Biochemistry</Link> */}
        <Link href="/cooking-notes">Cooking Notes</Link>
        <Link href="/contact">Contact</Link>
           <SmIcons> 

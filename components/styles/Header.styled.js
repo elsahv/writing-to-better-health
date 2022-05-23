@@ -76,9 +76,9 @@ text-transform: capitalize;
 text-decoration: none;  
   a {
   text-decoration: none;  
-  color: #fff;
+  color: #f6bea5;
   &:hover{
-    color: #f6bea5;
+    color: #fff;
     transition: 1s;
   }
 }
