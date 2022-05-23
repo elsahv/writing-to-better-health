@@ -32,7 +32,6 @@ const Header = () => {
    </Quote> 
    
    <NavLinks>
-
        <Link href="/portion-ctrl">Portion Ctrl</Link>
        <Link href="/nutritional-biochemistry">Nutritional Biochemistry</Link>
        <Link href="/cooking-notes">Cooking Notes</Link>
@@ -52,9 +51,9 @@ const Header = () => {
 
 
      <FooterSection>
-    Copyright @2022- <br />
+    Copyright @2022<br /> 
     <a href="https://www.elsahovey.com"> 
-    created by Elsa Hovey
+    site developed by Elsa Hovey
  </a>
     </FooterSection>
     

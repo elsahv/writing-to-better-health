@@ -36,7 +36,7 @@ export const Menu = styled.div`
 display: flex;
 justify-content: center;
 flex-direction: column;
-margin-top: 355px;
+margin-top: 305px;
 margin-left: 20px;
 @media only screen and (max-width: 768px) {
  
@@ -45,9 +45,10 @@ margin-left: 20px;
 
 
 export const Logo = styled.h1`
-font-size: 25px;
+font-size: 30px;
+margin: 10px 0;
  a{
-   color:  #f6bea5;
+   color:  aquamarine;  
    text-decoration: none;
 }
 @media only screen and (max-width: 768px) {
@@ -59,6 +60,7 @@ export const Quote = styled.span`
  width: 100%;
  display: flex;
  justify-content: flex-start;
+margin: 5px 0;
 @media only screen and (max-  width: 768px) {
  
 }
@@ -66,6 +68,7 @@ export const Quote = styled.span`
 
 
 export const NavLinks = styled.li`
+
 font-size: 22px;
 display: flex;
 flex-direction: column;
@@ -75,7 +78,7 @@ text-decoration: none;
   text-decoration: none;  
   color: #fff;
   &:hover{
-    color: aquamarine;
+    color: #f6bea5;
     transition: 1s;
   }
 }
@@ -91,6 +94,7 @@ export const SmIcons = styled.div`
 font-size: 23px;
 width: 100px;
 text-decoration: none;  
+margin: 10px 0;
  a {
    color: #fff;
    &:hover{
@@ -104,11 +108,12 @@ text-decoration: none;
 `
 
 export const FooterSection = styled.footer`
-width: 200px;
 color: #fff;
+margin: 25px 0;
 a {
   color: aquamarine;
   text-decoration: none;
+  margin: 10px 0;
  
 }
 a:hover {

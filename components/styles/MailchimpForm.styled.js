@@ -2,7 +2,7 @@
 import styled from 'styled-components'
 
 export const Form = styled.form`
-padding-left: 45px;
+padding-left: 25px;
 padding-top: 40px;
 `
 

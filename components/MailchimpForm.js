@@ -29,6 +29,7 @@ function Subscribe() {
       setErrorMsg(e.response.data.error)
       setState('Error')
     }
+
   }
 
   return (
@@ -36,9 +37,6 @@ function Subscribe() {
       <Form onSubmit={subscribe}>
 
       <Title>Subscribe for newsletter</Title>
-     
-
-            
             <FormInput
               required
               name="email"
