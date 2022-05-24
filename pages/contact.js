@@ -1,6 +1,4 @@
 import React from 'react'
-// import BusinessCard from '../components/BusinessCard'
- 
 import {
   Wrapper,
   Grid,

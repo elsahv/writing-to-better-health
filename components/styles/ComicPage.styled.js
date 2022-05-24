@@ -6,10 +6,15 @@ export const PageTitle = styled.div`
 text-align: center;
 font-size: 25px;
 padding: 35px 0;  
+@media only screen and (max-width: 768px) {
+}
 `
 
 export const Wrapper = styled.div`
  padding-left: 195px;
+@media only screen and (max-width: 768px) {
+padding: 0;
+}
 `
 
 export const PostLinks = styled.div`
@@ -18,8 +23,11 @@ margin: 20px;
 @media only screen and (max-width: 1024px) {
 margin: 0 100px;
 width: 700px;
-
 }
+@media only screen and (max-width: 768px) {
+    margin: auto;
+    background: green;
+    }
  `
 
 export const PostTitle = styled.h2`
@@ -41,8 +49,7 @@ span {
         padding-left: 10px;
     }
 }
-@media only screen and (max-width: 1024px) {
-     
+@media only screen and (max-width: 768px) {
 }
  `
 

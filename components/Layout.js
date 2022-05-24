@@ -1,4 +1,4 @@
- 
+  
 
 import GlobalStyles from './styles/Global'
 import styled from 'styled-components'
@@ -16,6 +16,10 @@ cursor: pointer;
 @media only screen and (max-width: 1024px) {
   padding: auto;
   margin: auto;
+}
+@media only screen and (max-width: 768px) {
+ display: flex;
+ justify-content: center;
 }
 `
 

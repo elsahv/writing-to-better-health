@@ -9,7 +9,6 @@ display: flex;
 justify-content: center;
 padding: 25px;
 @media only screen and (max-width: 1024px) {
-  padding-left: 255px;
 }
 `
 
@@ -23,7 +22,9 @@ grid-template-areas:
 'a b'
 'c d';
 grid-gap: 1em;
+
 @media only screen and (max-width: 1024px) {
+padding: auto;
 display: grid;
 grid-template-columns: 1fr;
 grid-template-areas: 
@@ -50,6 +51,12 @@ flex-direction: column;
 padding: 10px;
 height: 450px;
 width: 650px;
+@media only screen and (max-width: 1024px) {
+  width: 300px;
+  height: 400px;
+  padding: 0;
+
+}
 `
 
 export const SquareB = styled.div`

@@ -35,25 +35,17 @@ import {
               <AiOutlineClose />
           </MenuClose>  
             </div>
-
             <NavLinks>
              <h2>Navigation</h2>
             <Link href="/portion-ctrl">
                   <a>Portion Ctrl</a>
                 </Link>
-
-                <Link href="/nutritional-biochemistry">
-                  <a>Nutritional Biochemistry</a>
-                </Link>
-
                 <Link href="/cooking-notes">
                   <a>Cooking Notes</a>
                 </Link>
-             
                 <Link href="/contact">
                   <a>Contact</a>
                 </Link>
-                
               </NavLinks>
 
           </div>

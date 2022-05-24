@@ -4,8 +4,12 @@
 export const Title = styled.div` 
 text-align: center;
 font-size: 25px;
-padding-top: 25px; 
-padding-left: 145px; 
+padding-bottom: 25px; 
+@media only screen and (max-width: 1024px) {
+}
+@media only screen and (max-width: 768px) {
+  margin-left: 0px;
+  }
 `
 export const CategoriesSection = styled.div` 
  position: absolute;
@@ -20,6 +24,10 @@ export const CategoriesSection = styled.div`
 @media only screen and (max-width: 1024px) {
 margin-left: 300px;
 }
+@media only screen and (max-width: 768px) {
+  margin-left: 75px;
+  }
+ 
 `
 
 export const PostTitle = styled.div` 
@@ -77,6 +85,8 @@ grid-gap: 1em;
 
 
 @media only screen and (max-width: 600px) {
+  padding-top: 165px;
+  padding-left: 0;
   display: grid;
   grid-template-columns: 300px;
   grid-gap: 1em;
