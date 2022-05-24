@@ -14,8 +14,8 @@ margin-bottom: 55px;
 padding-top: 56px;
 cursor: pointer;
 @media only screen and (max-width: 1024px) {
-  padding: auto;
-  margin: auto;
+ margin: auto;
+ padding: auto;
 }
 @media only screen and (max-width: 768px) {
  display: flex;

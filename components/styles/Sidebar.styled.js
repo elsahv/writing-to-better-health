@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.div`
-width: 100%;
+width: 1000px;
 .nav-menu {
   background-color: #fff;
   width: 100%;

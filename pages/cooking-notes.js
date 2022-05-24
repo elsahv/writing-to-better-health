@@ -7,7 +7,7 @@ import {
   PostTitle,
   IndexPostGrid,
   TestWrapper
-} from '../components/styles/Grid.styled'
+} from '../components/styles/CookingNotes.styled'
 
 
 export default function Home({posts}) { 

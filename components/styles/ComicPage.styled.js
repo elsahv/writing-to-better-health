@@ -13,7 +13,7 @@ padding: 35px 0;
 export const Wrapper = styled.div`
  padding-left: 195px;
 @media only screen and (max-width: 768px) {
-padding: 0;
+    padding: 0;
 }
 `
 
@@ -25,9 +25,9 @@ margin: 0 100px;
 width: 700px;
 }
 @media only screen and (max-width: 768px) {
-    margin: auto;
-    background: green;
-    }
+width: 750px;
+padding-left: 185px;    
+}
  `
 
 export const PostTitle = styled.h2`
@@ -50,6 +50,8 @@ span {
     }
 }
 @media only screen and (max-width: 768px) {
+    p {
+    }
 }
  `
 
@@ -59,5 +61,9 @@ display: flex;
 .image {
     width: 290px;
     height: 300px;
+}
+@media only screen and (max-width: 768px) {
+  margin: none;
+    
 }
 `

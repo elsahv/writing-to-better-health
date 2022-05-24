@@ -23,6 +23,8 @@ export const CategoriesSection = styled.div`
  }
 @media only screen and (max-width: 1024px) {
 margin-left: 300px;
+padding-left: 150px;
+padding-top: 100px;
 }
 @media only screen and (max-width: 768px) {
   margin-left: 75px;
