@@ -9,7 +9,7 @@ import Sidebar from './Sidebar'
 
 
 const Wrapper = styled.div`
-margin-left: 450px;
+margin-left: 350px;
 margin-bottom: 55px;
 padding-top: 56px;
 cursor: pointer;

@@ -4,8 +4,6 @@
 export const Title = styled.div` 
 text-align: center;
 font-size: 25px;
-padding-bottom: 25px; 
-padding-right: 150px;
 @media only screen and (max-width: 1024px) {
 }
 @media only screen and (max-width: 768px) {

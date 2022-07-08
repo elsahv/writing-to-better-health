@@ -8,7 +8,6 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 import blockContent from './blockContent'
 import nutritionalBiochemistry from './nutritionalBiochemistry'
 import cookingNotes from './cookingNotes'
-import portionCtrl from './portionCtrl'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -17,6 +16,5 @@ export default createSchema({
     blockContent,
     nutritionalBiochemistry,
     cookingNotes,
-    portionCtrl,
   ]),
 })

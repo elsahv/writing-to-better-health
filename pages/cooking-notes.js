@@ -3,7 +3,6 @@ import Link from "next/link"
 import { sanityClient, urlFor } from "../client"
 import {
   Title,
-  // CategoriesSection,
   PostTitle,
   IndexPostGrid,
   Wrapper
@@ -19,28 +18,25 @@ export default function Home({posts}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Title>Cooking Notes</Title>
-       
-   
-
-      <Wrapper>
-      <IndexPostGrid> 
-        {posts &&
-        posts.map((post, index) => (   
-          <Link href={`post/${post.slug.current}`}>
-            <span key={index}>
-              <div className="square"> 
-              <img 
-               src={urlFor(post.mainImage)}
-               alt="main pic"
-               className="image"
-               />
-              <PostTitle>{post.title}</PostTitle>
-              </div>
-            </span>
-           </Link>
-        ))}
-          </IndexPostGrid>
-      </Wrapper>
+          <Wrapper>
+          <IndexPostGrid>   
+            {posts &&
+            posts.map((post, index) => (   
+              <Link href={`post/${post.slug.current}`}>
+                <span key={index}>
+                  <div className="square"> 
+                  <img 
+                  src={urlFor(post.mainImage)}
+                  alt="main pic"
+                  className="image"
+                  />
+                  <PostTitle>{post.title}</PostTitle>
+                  </div>
+                </span>
+              </Link>
+            ))}
+              </IndexPostGrid>
+          </Wrapper>
     </>
   )
 }
