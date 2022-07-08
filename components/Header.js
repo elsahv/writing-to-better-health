@@ -17,22 +17,18 @@ import {
 const Header = () => {
   return (
     <NavSection>
-
 <MailchimpForm />
-
 <Menu>
  <Logo> 
  <Link href="/">
    Writing to Better Health
    </Link>
    </Logo> 
-
    <Quote> 
    An illustrative blog about food and mental wellness...
    </Quote> 
-   
    <NavLinks>
-       <Link href="/portion-ctrl">Portion Ctrl</Link>
+       <Link href="/biochemistry">Biochemistry</Link>
        <Link href="/cooking-notes">Cooking Notes</Link>
        <Link href="/contact">Contact</Link>
           <SmIcons> 

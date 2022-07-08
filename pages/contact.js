@@ -1,4 +1,5 @@
 import React from 'react'
+import ContactForm from '../components/ContactForm'
 import {
   Wrapper,
   Grid,
@@ -33,7 +34,7 @@ const contact = () => {
                 </SquareC>
                     <Email>  
                       <Title>
-                      Contact 
+                      <ContactForm /> 
                       </Title>
                       Email form
                     </Email>  

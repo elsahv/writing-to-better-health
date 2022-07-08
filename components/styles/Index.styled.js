@@ -8,12 +8,12 @@ display: flex;
 justify-content: center;
 font-size: 35px;
 padding-top: 25px;  
+padding-right: 100px;
 @media only screen and (max-width: 1024px) {
  margin-left: 195px;
 }
 @media only screen and (max-width: 768px) {
-    margin: auto;
-   }
+    margin-left: 310px;
 `
 
 
@@ -21,10 +21,11 @@ padding-top: 25px;
 export const Wrapper = styled.div`
 margin-left: 10px;
 @media only screen and (max-width: 1024px) {
-    margin-left: 100px;
+    margin-left: 40px;
 }
 @media only screen and (max-width: 768px) {
-    margin: auto;
+    display: flex;
+    background: pink;
 }
 `
 
@@ -34,7 +35,7 @@ margin: 100px;
     margin-left: 250px;
 }
 @media only screen and (max-width: 768px) {
-    margin: 0;
+    margin-left: 0;
 }
 `
 
@@ -46,7 +47,6 @@ margin: 65px 125px 25px 125px;
 font-size: 35px;
 }
 @media only screen and (max-width: 768px) {
-font-size: 15px;
 
 }
 `
@@ -58,13 +58,13 @@ export const ImgWrapper = styled.div`
 }
 @media only screen and (max-width: 1024px) {
     .image {
-        width: 600px;
-        height: 400px;
+        width: 550px;
+        height: 300px;
     }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 500px) {
     .image {
-        width: 350px;
+        width: 400px;
         height: 250px;
     }
 }
@@ -76,12 +76,11 @@ width: 900px;
 margin: 20px 100px;
 font-size: 20px;
 @media only screen and (max-width: 1024px) {
-margin: auto;
+margin: 20px;
 width: 600px;
 font-size: 18px;
 }
 @media only screen and (max-width: 768px) {
-width: 300px;
 }
 `
 

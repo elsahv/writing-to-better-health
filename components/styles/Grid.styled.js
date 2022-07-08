@@ -5,32 +5,14 @@ export const Title = styled.div`
 text-align: center;
 font-size: 25px;
 padding-bottom: 25px; 
+padding-right: 150px;
 @media only screen and (max-width: 1024px) {
 }
 @media only screen and (max-width: 768px) {
   margin-left: 0px;
   }
 `
-export const CategoriesSection = styled.div` 
- position: absolute;
- top: 0;
- width: 100px;
- height: 200px;
- margin-left: 100px;
- margin-top: 200px;
- li {
-   margin: 10px;
- }
-@media only screen and (max-width: 1024px) {
-margin-left: 300px;
-padding-left: 150px;
-padding-top: 100px;
-}
-@media only screen and (max-width: 768px) {
-  margin-left: 75px;
-  }
  
-`
 
 export const PostTitle = styled.div` 
 text-transform: capitalize;
@@ -105,7 +87,7 @@ grid-gap: 1em;
 ` 
 
 
-export const TestWrapper = styled.div`
+export const Wrapper = styled.div`
 margin-left: 200px; 
 @media only screen and (max-width: 1024px) {
  width: 100%; 

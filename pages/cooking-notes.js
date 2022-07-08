@@ -3,11 +3,11 @@ import Link from "next/link"
 import { sanityClient, urlFor } from "../client"
 import {
   Title,
-  CategoriesSection,
+  // CategoriesSection,
   PostTitle,
   IndexPostGrid,
-  TestWrapper
-} from '../components/styles/CookingNotes.styled'
+  Wrapper
+} from '../components/styles/Grid.styled'
 
 
 export default function Home({posts}) { 
@@ -20,16 +20,9 @@ export default function Home({posts}) {
       </Head>
       <Title>Cooking Notes</Title>
        
-      <CategoriesSection>
-        <h2>Categories</h2>
-        <ul>
-          <li>Recipes</li>
-          <li>Nutritional Biochemistry</li>
-        </ul>
-      </CategoriesSection>
+   
 
-
-      <TestWrapper>
+      <Wrapper>
       <IndexPostGrid> 
         {posts &&
         posts.map((post, index) => (   
@@ -47,7 +40,7 @@ export default function Home({posts}) {
            </Link>
         ))}
           </IndexPostGrid>
-      </TestWrapper>
+      </Wrapper>
     </>
   )
 }

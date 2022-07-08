@@ -14,13 +14,11 @@ width: 1000px;
   transition: 850ms;
   background: teal;
   z-index: 1000;
-
 }
 .nav-menu.active {
     right: 0;
     transition: 350ms;
   }
-    
   .navbar-toggle {
     width: 100%;
     height: 80px;
