@@ -82,7 +82,7 @@ grid-gap: 1em;
 
 
 @media only screen and (max-width: 767px) {
-  padding-top: 165px;
+  padding-top: 65px;
   padding-left: 0;
   display: grid;
   grid-template-columns: 300px;

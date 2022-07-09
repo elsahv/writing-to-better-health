@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.div`
-width: 1000px;
+width: 100%;
 .nav-menu {
   background-color: #fff;
   width: 100%;
@@ -27,7 +27,7 @@ width: 1000px;
     align-items: center;
   }
   
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 767px) {
     display: none;
 }
 `
