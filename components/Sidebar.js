@@ -38,7 +38,7 @@ import {
             <NavLinks>
              <h2>Navigation</h2>
             <Link href="/portion-ctrl">
-                  <a>Portion Ctrl</a>
+                  <a>Biochemistry</a>
                 </Link>
                 <Link href="/cooking-notes">
                   <a>Cooking Notes</a>
