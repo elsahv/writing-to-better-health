@@ -1,81 +1,59 @@
+
 import styled from 'styled-components'
 
 
 
 //STYLES
 
+export const ExternalWrapper = styled.div`
+text-align: center;
+font-weight: bold;
+height: 900px;
+h2 {
+  padding: 10px;
+}
+
+`
+
 export const Wrapper = styled.div`
 display: flex;
 justify-content: center;
-padding: 25px;
-@media only screen and (max-width: 1024px) {
-}
-`
-
-
-export const Grid = styled.div`
-padding-top: 20px;
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: repeat(2, 1fr);
-grid-template-areas: 
-'a b'
-'c d';
-grid-gap: 1em;
-
-@media only screen and (max-width: 1024px) {
-padding: auto;
-display: grid;
-grid-template-columns: 1fr;
-grid-template-areas: 
-'a'
-'b'
-'c'
-'d'
-;
-}
-`
-export const Title = styled.h2`
- 
-@media only screen and (max-width: 1024px) {
-}
-`
-
-export const About = styled.div`
-grid-area: a;
-background: teal;
-display: flex;
-justify-content: center;
-align-items: center;
 flex-direction: column;
+padding-top: 50px;
+a {
+  font-size: 30px;
+  margin: 20px 10px;
+  color: #007ba5;
+}
+p {
+  font-size: 20px;
+}
+@media only screen and (max-width: 500px) {
+  a {
+   font-size: 25px;
+  }
+  
+}
+`
+
+export const Title = styled.h2`  
+margin: 75px 0 0 0;
+font-size: 35px;
+
+`
+
+export const SmIcons = styled.div`
+font-size: 35px;
 padding: 10px;
-height: 450px;
-width: 650px;
-@media only screen and (max-width: 1024px) {
-  width: 300px;
-  height: 400px;
-  padding: 0;
-
+a {
+  color: #000;
+  margin: 5px;
+  &:hover{
+    color: #3aa1aa;
+    transition: 1s;
+  }
 }
-`
-
-export const SquareB = styled.div`
-grid-area: b;
-background-image: url('/images/plants.jpg');
-`
-export const SquareC = styled.div`
-grid-area: c;
-background-image: url('/images/plants.jpg');
-`
-export const Email = styled.div`
-grid-area: d;
-background: maroon;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
 `
 
 
 //END STYLES
-

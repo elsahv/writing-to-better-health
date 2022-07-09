@@ -1,48 +1,44 @@
-import React from 'react'
-import ContactForm from '../components/ContactForm'
-import {
-  Wrapper,
-  Grid,
+import { 
+  FaLinkedin,
+  FaInstagram,
+  FaGithub
+ } from 'react-icons/fa'; 
+
+ import {
   Title,
-  About,
-  SquareB,
-  SquareC,
-  Email
-} from '../components/styles/Contact.styled'
+  Wrapper,
+  SmIcons,
+  ExternalWrapper
+ } from '../components/styles/Contact.styled.js'
 
-
-
-
-const contact = () => {
+const ContactForm = () => {
   return (
     <>
+    <ExternalWrapper>
+    <Title>
+    Contact Info
+    </Title>
     <Wrapper>
-      <Grid>
-        <About>
-          <Title>
-          About
-          </Title>
-          <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, rfsdfecusandae.</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, nemo. Facere ex doloribus cupiditate accusantium! Incidunt placeat, fuga eos delectus at corrupti pariatur ducimus exercitationem repudiandae, esse vitae numquam fugiat.</p>
-        </About>
+       <p>I am currently available for work, you can reach me at:</p>
+        <a href="mailto:elsahovey@gmail.com"> elsahovey@gmail.com</a>
+        </Wrapper>
+        
+        <p>You can also find me on:</p>
 
-              <SquareB>  
-              Photo
-              </SquareB>  
-                  <SquareC>
-                  Photo
-                </SquareC>
-                    <Email>  
-                      <Title>
-                      <ContactForm /> 
-                      </Title>
-                      Email form
-                    </Email>  
+      <SmIcons>
+       <a className="sm-icon" href="http://github.com/elsahv"> 
+            <FaGithub />
+            </a>
 
-      </Grid>
-      </Wrapper>
+      <a className="sm-icon" href="https://linkedin.com/in/elsa-hovey"> 
+            <FaLinkedin />
+            </a>
+      <a className="sm-icon" href="https://www.instagram.com/elsahoveydevdesign/"> 
+            <FaInstagram />
+            </a>
+            </SmIcons>
+            </ExternalWrapper>
     </>
   )
 }
-
-export default contact
+export default ContactForm
