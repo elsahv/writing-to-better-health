@@ -27,7 +27,7 @@ width: 1000px;
     align-items: center;
   }
   
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
     display: none;
 }
 `

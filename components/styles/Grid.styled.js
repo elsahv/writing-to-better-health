@@ -10,6 +10,8 @@ font-size: 25px;
   margin-left: 0px;
   }
 `
+
+
  
 
 export const PostTitle = styled.div` 
@@ -33,7 +35,6 @@ text-shadow: 2px 2px 2px black;
 display: grid;
 grid-template-columns: repeat(3, 350px);
 grid-gap: 1em;
-
 .square {
   cursor: pointer;
   background: #2d6a4f;
@@ -54,9 +55,18 @@ grid-gap: 1em;
   }
 
 
-
 @media only screen and (max-width: 1024px) {
-  padding-left: 435px;
+  padding-left: 295px;
+  padding-top: 45px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 300px);
+  grid-gap: 1.5em;
+}
+
+
+@media only screen and (max-width: 834px) {
+  padding-left: 275px;
   padding-top: 45px;
   margin: auto;
   display: grid;
@@ -64,9 +74,14 @@ grid-gap: 1em;
   grid-gap: 1.5em;
 }
 
+@media only screen and (max-width: 768px) {
+  padding-left: 245px;
+  display: grid;
+  grid-template-columns: repeat(2, 220px);
+}
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
   padding-top: 165px;
   padding-left: 0;
   display: grid;
@@ -88,11 +103,7 @@ grid-gap: 1em;
 export const Wrapper = styled.div`
 margin-left: 200px; 
 @media only screen and (max-width: 1024px) {
- width: 100%; 
- margin: 0;
- display: flex;
- justify-content: center;
- padding: 10px;
+ margin-left: 0px;
 }
 @media only screen and (max-width: 500px) {
   padding: 0;

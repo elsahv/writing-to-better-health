@@ -14,7 +14,7 @@ margin-bottom: 55px;
 padding-top: 56px;
 cursor: pointer;
 @media only screen and (max-width: 1024px) {
- margin: auto;
+ margin-left: 0;
  padding: auto;
 }
 @media only screen and (max-width: 768px) {

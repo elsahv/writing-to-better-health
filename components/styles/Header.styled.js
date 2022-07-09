@@ -19,8 +19,8 @@ text-decoration: none;
   top: 0;
 }
 
-@media only screen and (max-width: 768px) {
-display: none;
+@media only screen and (max-width: 767px) {
+  display: none;
   }
 
 `
