@@ -42,7 +42,7 @@ export default function Home({posts}) {
 }
 
 export const getServerSideProps = async () => {
-  const query = '*[ _type in ["cookingNotes", "nutritionalBiochemistry"]] | order(_createdAt desc)'
+  const query = '*[ _type in ["kitchen", "nutritionalBiochemistry"]] | order(_createdAt desc)'
   const posts = await sanityClient.fetch(query)
 
   if (!posts.length) {

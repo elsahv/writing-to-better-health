@@ -37,11 +37,11 @@ import {
             </div>
             <NavLinks>
              <h2>Navigation</h2>
-            <Link href="/biochemistry">
+            <Link href="/nutritional-biochemistry">
                   <a>Biochemistry</a>
                 </Link>
-                <Link href="/cooking-notes">
-                  <a>Cooking Notes</a>
+                <Link href="/kitchen">
+                  <a>Kitchen</a>
                 </Link>
                 <Link href="/contact">
                   <a>Contact</a>

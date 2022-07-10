@@ -8,36 +8,31 @@ import {
   BodyContent,
 } from '../../components/styles/Post.styled'
 
-
 const Post = ({
   title,
   mainImage,
   body,
+  publishedAt
  
 }) => {
   return (
     <Wrapper>
-   
       <ImageSection>
               <img
                  src={urlFor(mainImage)}
                  alt=""
                  className="img"
-          
                  />
       </ImageSection>
-
       <BodyContent>
-
       <Title>{title}</Title>
       <DateSection>
-      Published on: date
+      Published on: <div>{new Date(publishedAt).toDateString()}</div>
       </DateSection>
       <hr />
          <PortableText value={body} />
         </BodyContent>
       <hr />
-
     </Wrapper>
   )
 }
@@ -45,17 +40,17 @@ const Post = ({
 export const getServerSideProps = async (pageContext) => {
   const pageSlug = pageContext.query.slug
 
-  const query = `*[_type in ["portionCtrl", "nutritionalBiochemistry", "cookingNotes"] && slug.current == $pageSlug][0]{
+  const query = `*[_type in ["nutritionalBiochemistry", "cookingNotes"] && slug.current == $pageSlug][0]{
     title,
     mainImage,
-    body
+    body,
+    publishedAt
   }`
 
   const post = await sanityClient.fetch(query, { pageSlug })
 
   if (!post) {
     return {
-
       props: null,
       notFound: true,
     }
@@ -65,6 +60,7 @@ export const getServerSideProps = async (pageContext) => {
         title: post.title,
         mainImage: post.mainImage,
         body: post.body,
+        publishedAt: post.publishedAt
       },
     }
   }

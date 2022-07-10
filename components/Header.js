@@ -28,8 +28,8 @@ const Header = () => {
    An illustrative blog about food and mental wellness...
    </Quote> 
    <NavLinks>
-       <Link href="/biochemistry">Nutritional Biochemistry</Link>
-       <Link href="/cooking-notes">Kitchen</Link>
+       <Link href="/nutritional-biochemistry">Nutritional Biochemistry</Link>
+       <Link href="/kitchen">Kitchen</Link>
        <Link href="/contact">Contact</Link>
           <SmIcons> 
           <a href="http://pinterest.com"> 
