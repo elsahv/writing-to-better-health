@@ -1,6 +1,6 @@
 export default {
-    name: 'cookingNotes',
-    title: 'Cooking Notes',
+    name: 'kitchen',
+    title: 'Kitchen',
     type: 'document',
     fields: [
       {
