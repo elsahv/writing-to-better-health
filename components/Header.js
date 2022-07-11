@@ -29,7 +29,7 @@ const Header = () => {
    </Quote> 
    <NavLinks>
        <Link href="/nutritional-biochemistry">Nutritional Biochemistry</Link>
-       <Link href="/kitchen">Kitchen</Link>
+       <Link href="/blog">Blog</Link>
        <Link href="/contact">Contact</Link>
           <SmIcons> 
           <a href="http://pinterest.com"> 

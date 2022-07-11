@@ -40,8 +40,8 @@ import {
             <Link href="/nutritional-biochemistry">
                   <a>Biochemistry</a>
                 </Link>
-                <Link href="/kitchen">
-                  <a>Kitchen</a>
+                <Link href="/blog">
+                  <a>Blog</a>
                 </Link>
                 <Link href="/contact">
                   <a>Contact</a>

@@ -40,7 +40,7 @@ const Post = ({
 export const getServerSideProps = async (pageContext) => {
   const pageSlug = pageContext.query.slug
 
-  const query = `*[_type in ["nutritionalBiochemistry", "cookingNotes"] && slug.current == $pageSlug][0]{
+  const query = `*[_type in ["nutritionalBiochemistry", "blogPosts"] && slug.current == $pageSlug][0]{
     title,
     mainImage,
     body,

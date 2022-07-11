@@ -19,7 +19,7 @@ export default function Home({posts}) {
       </Head>
       <Title>Nutritional Biochemistry</Title>
           <Wrapper>
-          <IndexPostGrid> 
+          <IndexPostGrid>   
             {posts &&
             posts.map((post, index) => (   
               <Link href={`post/${post.slug.current}`}>
