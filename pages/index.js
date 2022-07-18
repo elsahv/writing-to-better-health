@@ -24,13 +24,14 @@ export default function Home({posts}) {
             posts.map((post, index) => (   
               <Link href={`post/${post.slug.current}`}>
                 <span key={index}>
+                  <PostTitle>{post.title}</PostTitle>
+
                   <div className="square"> 
                   <img 
                   src={urlFor(post.mainImage)}
                   alt="main pic"
                   className="image"
                   />
-                  <PostTitle>{post.title}</PostTitle>
                   </div>
                 </span>
               </Link>

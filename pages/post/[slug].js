@@ -24,14 +24,14 @@ const Post = ({
                  className="img"
                  />
       </ImageSection>
-      <BodyContent>
-      <Title>{title}</Title>
-      <DateSection>
-      Published on: <div>{new Date(publishedAt).toDateString()}</div>
-      </DateSection>
-      <hr />
-         <PortableText value={body} />
-        </BodyContent>
+          <BodyContent>
+          <Title>{title}</Title>
+            <DateSection>
+            Published on: <div>{new Date(publishedAt).toDateString()}</div>
+            </DateSection>
+        <hr />
+          <PortableText value={body} />
+          </BodyContent>
       <hr />
     </Wrapper>
   )
