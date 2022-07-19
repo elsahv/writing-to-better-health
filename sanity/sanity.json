@@ -1,11 +1,11 @@
 {
   "root": true,
-  "api": {
-    "projectId": "abl9rf0z",
-    "dataset": "production"
-  },
   "project": {
-    "name": "next-wtbh2"
+    "name": "writing to better health"
+  },
+  "api": {
+    "projectId": "wcrwdaqq",
+    "dataset": "production"
   },
   "plugins": [
     "@sanity/base",
@@ -24,6 +24,10 @@
     {
       "name": "part:@sanity/base/schema",
       "path": "./schemas/schema"
+    },
+    {
+      "implements": "part:@sanity/base/root",
+      "path": "plugins/sanity-plugin-tutorial/CustomDefaultLayout"
     }
   ]
 }

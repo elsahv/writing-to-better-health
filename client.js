@@ -10,7 +10,7 @@ const config = {
    * https://nextjs.org/docs/basic-features/environment-variables
    **/
    dataset: "production",
-  projectId: "abl9rf0z",
+  projectId: "wcrwdaqq",
   apiVersion: "2022-05-22", 
   useCdn: false,
   // or today's date for latest

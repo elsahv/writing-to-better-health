@@ -1,12 +1,12 @@
 export default {
-    name: 'nutritionalBiochemistry',
-    title: 'Nutritional Biochemistry',
+    name: 'biochemistry',
+    title: 'Biochemistry',
     type: 'document',
     fields: [
       {
         name: 'title',
         title: 'Title',
-        type: 'string',
+        type: 'string'
       },
       {
         name: 'slug',
@@ -14,33 +14,32 @@ export default {
         type: 'slug',
         options: {
           source: 'title',
-          maxLength: 96,
-        },
+          maxLength: 96
+        }
       },
-    
       {
         name: 'mainImage',
         title: 'Main image',
         type: 'image',
         options: {
-          hotspot: true,
-        },
+          hotspot: true
+        }
+      },
+      {
+        name: 'categories',
+        title: 'Categories',
+        type: 'array',
+        of: [{type: 'reference', to: {type: 'category'}}]
       },
       {
         name: 'publishedAt',
         title: 'Published at',
-        type: 'datetime',
-        options: {
-          dateFormat: 'YYYY-MM-DD',
-          // calendarTodayLabel: 'Today'
-        }
+        type: 'datetime'
       },
       {
         name: 'body',
         title: 'Body',
-        type: 'blockContent',
-      },
+        type: 'blockContent'
+      }
     ],
-  
   }
-  
