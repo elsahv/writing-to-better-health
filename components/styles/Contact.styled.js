@@ -37,7 +37,7 @@ p {
 `
 
 export const Title = styled.h2`  
-margin: 75px 0 0 0;
+// margin: 75px 0 0 0;
 font-size: 35px;
 
 `

@@ -10,7 +10,7 @@ import {
     MenuOpen,
     MenuClose,
     SidebarLogo
-  } from './styles/Sidebar.styled'
+  } from './Sidebar.styled'
 
 
 
@@ -37,13 +37,13 @@ import {
             </div>
             <NavLinks>
              <h2>Navigation</h2>
-            <Link href="/nutritional-biochemistry">
-                  <a>Biochemistry</a>
+            <Link href="/">
+                  <a>Home</a>
                 </Link>
-                <Link href="/blog">
+                <Link href="/">
                   <a>Blog</a>
                 </Link>
-                <Link href="/contact">
+                <Link href="/">
                   <a>Contact</a>
                 </Link>
               </NavLinks>

@@ -9,17 +9,24 @@ import Sidebar from './Sidebar'
 
 
 const Wrapper = styled.div`
-margin-left: 300px;
-margin-bottom: 55px;
-padding-top: 56px;
-cursor: pointer;
+// background: maroon;
+padding-top: 10px;
+padding-bottom: 55px;
+margin-left: 360px;
+margin-right: 10px;
+
+ 
+
 @media only screen and (max-width: 1024px) {
- margin-left: 0;
  padding: auto;
+ margin-left: 260px;
 }
-@media only screen and (max-width: 768px) {
+
+@media only screen and (max-width: 531px) {
  display: flex;
  justify-content: center;
+ padding: auto;
+ margin: auto;
 }
 `
 

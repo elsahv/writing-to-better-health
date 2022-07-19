@@ -30,7 +30,7 @@ const Header = () => {
    <NavLinks>
        <Link href="/">Home</Link>
        <Link href="/">About</Link>
-       <Link href="/contact">Contact</Link>
+       <Link href="/">Contact</Link>
        
           <SmIcons> 
           <a href="http://pinterest.com"> 

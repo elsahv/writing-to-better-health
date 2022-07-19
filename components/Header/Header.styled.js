@@ -19,7 +19,7 @@ text-decoration: none;
   top: 0;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 531px) {
   display: none;
   }
 
