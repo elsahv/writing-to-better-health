@@ -9,7 +9,7 @@ import {
   Wrapper,
   SmIcons,
   ExternalWrapper
- } from './styles/Contact.styled.js'
+ } from './Contact.styled.js'
 
 const ContactForm = () => {
   return (
