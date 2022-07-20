@@ -1,12 +1,12 @@
 export default {
-    name: 'blogPosts',
-    title: 'Blog Posts',
+    name: 'cookingNotes',
+    title: 'Cooking Notes',
     type: 'document',
     fields: [
       {
         name: 'title',
         title: 'Title',
-        type: 'string'
+        type: 'string',
       },
       {
         name: 'slug',
@@ -14,37 +14,32 @@ export default {
         type: 'slug',
         options: {
           source: 'title',
-          maxLength: 96
-        }
+          maxLength: 96,
+        },
       },
       {
         name: 'mainImage',
         title: 'Main image',
         type: 'image',
         options: {
-          hotspot: true
-        }
-      },
-      {
-        name: 'description',
-        title: 'Description',
-        type: 'string'
-      },
-      {
-        name: 'categories',
-        title: 'Categories',
-        type: 'array',
-        of: [{type: 'reference', to: {type: 'category'}}]
+          hotspot: true,
+        },
       },
       {
         name: 'publishedAt',
         title: 'Published at',
-        type: 'datetime'
+        type: 'datetime',
+        options: {
+          dateFormat: 'YYYY-MM-DD',
+          // calendarTodayLabel: 'Today'
+        }
       },
       {
         name: 'body',
         title: 'Body',
-        type: 'blockContent'
-      }
+        type: 'blockContent',
+      },
     ],
+  
+
   }

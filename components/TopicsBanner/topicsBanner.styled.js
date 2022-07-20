@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 
 export const Wrapper = styled.div`
-  margin-top: 70px;
+  margin-top: 120px;
   width: 100%;
   display: flex;
   justify-content: center;

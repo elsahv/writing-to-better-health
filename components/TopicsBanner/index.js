@@ -18,19 +18,23 @@ const TopicsBannerCTA = () => {
     <>
       <Wrapper>
         <Grid>
+        <Link href="/cooking-notes">
           <TopicWrapper>
             <TopicTitle>Cooking Notes</TopicTitle>
             <ImageWrapper>
               <Image src={ImgOne} layout="fill" />
             </ImageWrapper>
           </TopicWrapper>
+          </Link>
 
+          <Link href="/nutritional-biochemistry">
           <TopicWrapper>
             <TopicTitle>Nutritional Biochemistry</TopicTitle>
             <ImageWrapper>
               <Image src={ImgTwo} layout="fill" />
             </ImageWrapper>
           </TopicWrapper>
+          </Link>
 
           <TopicWrapper>
             <TopicTitle>Blog</TopicTitle>
