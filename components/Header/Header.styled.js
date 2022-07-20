@@ -19,6 +19,10 @@ text-decoration: none;
   top: 0;
 }
 
+@media only screen and (max-width: 1024px) {
+  width: 200px;
+}
+
 @media only screen and (max-width: 531px) {
   display: none;
   }

@@ -3,7 +3,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { sanityClient, urlFor } from "../client"
 import Contact from '../components/Contact'
-import TopicsBannerCTA from '../components/TopicsBannerCTA'
+import TopicsBannerCTA from '../components/TopicsBanner'
 
  
 
