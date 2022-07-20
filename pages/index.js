@@ -21,7 +21,7 @@ export default function Home({ categories }) {
    
 
            <TopicsBannerCTA />
-          blog- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque temporibus ab obcaecati cumque exercitationem consequatur repudiandae facilis distinctio. Fuga autem veritatis impedit delectus rem enim accusamus numquam quasi sapiente quis?
+          {/* blog- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque temporibus ab obcaecati cumque exercitationem consequatur repudiandae facilis distinctio. Fuga autem veritatis impedit delectus rem enim accusamus numquam quasi sapiente quis? */}
          {/* <Contact /> */}
        
     </>
