@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Link from "next/link"
-import { sanityClient, urlFor } from "../client"
 import Contact from '../components/Contact'
 import TopicsBannerCTA from '../components/TopicsBanner'
 import About from '../components/About'
@@ -8,12 +7,7 @@ import styled from 'styled-components'
 
 
 
-//STYLES
- const BlogWrapper = styled.div`
-  background: teal;
-  width: 100%;  
-  margin-top: 200px;
-`
+//STYLES 
 
 export const BlogTitle = styled.h2`
 display: flex;
@@ -83,53 +77,14 @@ const Home = ({ posts }) => {
                    <RecentBlogPostTitle>First post</RecentBlogPostTitle>
                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam inventore ratione, est similique molestiae eius esse sit ea assumenda architecto aperiam nihil, doloribus quae debitis rerum quidem! Eaque, itaque quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam inventore ratione, est similique molestiae eius esse sit ea assumenda architecto aperiam nihil, doloribus quae debitis rerum quidem! Eaque, itaque qui Read More...</p>
                    </MostRecentWrapper>
-
-
-                   <BlogWrapper> 
-                  <BlogTitle id="blog">Blog</BlogTitle>
-                   
-                   <PostsContainer>
-                   {posts &&
-                    posts.map((post, index) => (
-                      <span key={index}>
-                      <PostTitle>{post.postTitle}</PostTitle>
-                      <ImageWrapper>
-                      <img
-                       src={urlFor(post.mainImage)}
-                       className="img"
-                      layout="fill"
-                       />
-                      </ImageWrapper>
-                      </span>
-                    ))
-                    }
-                    </PostsContainer>
-                   </BlogWrapper>
-
+                  
                
          <About />
          <Contact />
-    </>
+ 
+   </>
   )
 }
- 
-export const getServerSideProps = async () => {
-  const query = '*[_type == "blogPosts"]'
-  const posts = await sanityClient.fetch(query)
-
-  if(!posts.length) {
-    return {
-      props: {
-        posts: [],
-      },
-    }
-  } else {
-    return {
-      props: {
-        posts,
-      },
-    }
-  }
-}
+  
 
 export default Home

@@ -16,6 +16,7 @@ import {
 const TopicsBannerCTA = () => {
   return (
     <>
+    {/* Categories */}
       <Wrapper>
         <Grid>
           {/* motion up */}
@@ -39,7 +40,7 @@ const TopicsBannerCTA = () => {
           </Link>
 
           {/* motion down*/}
-          <Link href="/#blog">
+          <Link href="/blog">
           <TopicWrapper>
             <TopicTitle>Blog</TopicTitle>
             <ImageWrapper>

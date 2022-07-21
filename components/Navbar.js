@@ -4,35 +4,38 @@ import styled from 'styled-components'
 
 //STYLES
 const Wrapper = styled.div`
-display: flex;
-justify-content: center;
-background: teal;
-padding: 30px;
-margin-top: 30px;
-margin-left: 150px;
-margin-right: 150px;
-border: solid 2px black;
-
 ul {
     display: flex;  
+    flex-direction: column;
     list-style: none;
 }    
 li {
-    margin: 0 50px;
-    color: #fff;
     font-size: 20px;
     font-weight: bold;
     text-decoration: underline;
     cursor: pointer;
+    text-decoration: none;
+    color: teal;
+    padding: 2px 0;
 }
+ a {
+ }
+ 
+
 `
 
+const Title = styled.h3`
+text-decoration: underline;
+font-size: 25px;
+padding: 5px 0;
+`
 
 //END STYLES
 
 const Navbar = () => {
   return (
     <Wrapper>
+      <Title>Categories</Title>
         <ul>
             <Link href="/cooking-notes">
             <li>Cooking Notes</li>
@@ -42,7 +45,7 @@ const Navbar = () => {
             <li>Biochemistry</li>
             </Link>
 
-            <Link href="/#blog">
+            <Link href="/blog">
             <li>Blog</li>
             </Link>
 

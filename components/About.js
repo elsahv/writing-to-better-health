@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 //STYLES
 const Wrapper = styled.div`
-// background: pink;
+background: teal;
 border-top: solid 2px black;
 border-bottom: solid 2px black;
 display: flex;
@@ -16,6 +16,7 @@ const Title = styled.h3`
 font-size: 25px;
 text-align: center;
 padding: 15px;
+background: coral;
 `
 const Content = styled.p`
 font-size: 20px;
