@@ -1,46 +1,59 @@
-
 import styled from 'styled-components'
 
-
-
-//STYLES
-
-export const ExternalWrapper = styled.div`
+ 
+export const Wrapper = styled.div`
+// background: pink;
 text-align: center;
 font-weight: bold;
-margin-top: 150px;
-padding: 200px;
-h2 {
-  padding: 10px;
-}
-
-`
-
-export const Wrapper = styled.div`
-display: flex;
-justify-content: center;
-flex-direction: column;
-padding-top: 50px;
-a {
-  font-size: 30px;
-  margin: 20px 10px;
-  color: #007ba5;
-}
-p {
-  font-size: 20px;
-}
-@media only screen and (max-width: 500px) {
-  a {
-   font-size: 25px;
-  }
-  
+ 
+@media only screen and (max-width: 1024px) {
+margin-top: 0;
 }
 `
 
 export const Title = styled.h2`  
-// margin: 75px 0 0 0;
+margin: 25px 0 0 0;
 font-size: 35px;
 
+@media only screen and (max-width: 1024px) {
+  font-size: 20px;
+}
+ 
+`
+
+
+
+export const EmailCTA = styled.div`
+display: flex;
+justify-content: center;
+flex-direction: column;
+padding: 50px 0;
+a {
+  font-size: 25px;
+  margin: 20px 0px;
+  color: #007ba5;
+}
+
+@media only screen and (max-width: 1024px) {
+a { 
+  font-size: 20px;
+}
+}
+
+@media only screen and (max-width: 600px) {
+  margin: 0;
+  a { 
+    font-size: 18px;
+  }
+}
+`
+
+export const EmailCTAtagline = styled.div`
+font-size: 20px;
+
+@media only screen and (max-width: 600px) {
+font-size: 17px;
+}
 `
 
 export const SmIcons = styled.div`
@@ -56,5 +69,13 @@ a {
 }
 `
 
+export const SmWrapper = styled.div`
+// background: green;
 
-//END STYLES
+@media only screen and (max-width: 600px) {
+span {
+  font-size: 18px;
+  // color: blue;
+}
+}
+ `

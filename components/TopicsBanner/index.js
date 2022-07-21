@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-
 import ImgOne from "../../public/images/sketch1.jpg";
 import ImgTwo from "../../public/images/sketch2.jpg";
 import ImgThree from "../../public/images/sketch3.jpg";

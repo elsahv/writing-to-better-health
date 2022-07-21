@@ -75,15 +75,13 @@ const Home = ({ posts }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
            <TopicsBannerCTA />  
-
                    <MostRecentWrapper>
                    <RecentPostTitle>Most Recent Post</RecentPostTitle>
                    <RecentBlogPostTitle>First post</RecentBlogPostTitle>
                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam inventore ratione, est similique molestiae eius esse sit ea assumenda architecto aperiam nihil, doloribus quae debitis rerum quidem! Eaque, itaque quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam inventore ratione, est similique molestiae eius esse sit ea assumenda architecto aperiam nihil, doloribus quae debitis rerum quidem! Eaque, itaque qui Read More...</p>
                    </MostRecentWrapper>
-
-         {/* <About /> */}
-         {/* <Contact /> */}
+         <About />
+         <Contact />
    </>
   )
 }

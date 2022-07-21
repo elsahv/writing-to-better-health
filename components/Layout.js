@@ -10,8 +10,8 @@ const Wrapper = styled.div`
 // background: maroon;
 padding-top: 10px;
 padding-bottom: 55px;
-padding-left: 360px;
-padding-right: 10px;
+padding-left: 340px;
+// padding-right: 10px;
 
  
 

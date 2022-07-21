@@ -4,12 +4,11 @@ import styled from 'styled-components'
 
 //STYLES
 const Wrapper = styled.div`
-background: teal;
-border-top: solid 2px black;
-border-bottom: solid 2px black;
+background: coral;
+border: solid 2px black;
 display: flex;
 justify-content: center;
-padding: 90px 50px 450px;
+padding-bottom: 25px;
 `
 
 const Title = styled.h3`
@@ -18,7 +17,7 @@ text-align: center;
 padding: 15px;
 `
 const Content = styled.p`
-font-size: 20px;
+font-size: 18px;
 text-align: center;
 padding: 15px;
 `

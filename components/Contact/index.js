@@ -6,40 +6,50 @@ import {
 
  import {
   Title,
-  Wrapper,
+  EmailCTA,
+  EmailCTAtagline,
   SmIcons,
-  ExternalWrapper
+  Wrapper,
+  SmWrapper
  } from './Contact.styled.js'
 
+ 
 const ContactForm = () => {
   return (
     <>
-    <ExternalWrapper>
-    <Title>
-      <div id="contact">
-    Contact Info
-    </div>
-    </Title>
     <Wrapper>
-       <p>I am currently available for work, you can reach me at:</p>
-        <a href="mailto:elsahoveydevdesigns@gmail.com">elsahoveydevdesigns@gmail.com</a>
-        </Wrapper>
         
-        <p>You can also find me on:</p>
+      <Title>
+        <div id="contact">
+      Contact Info
+      </div>
+      </Title>
 
-      <SmIcons>
-       <a className="sm-icon" href="http://github.com/elsahv"> 
-            <FaGithub />
-            </a>
 
-      <a className="sm-icon" href="https://linkedin.com/in/elsa-hovey"> 
-            <FaLinkedin />
-            </a>
-      <a className="sm-icon" href="https://www.instagram.com/elsahoveydevdesign/"> 
-            <FaInstagram />
-            </a>
+        <EmailCTA>
+          <EmailCTAtagline>I am currently available for work, you can reach me at:</EmailCTAtagline>
+            <a href="mailto:elsahoveydevdesigns@gmail.com">elsahoveydevdesigns@gmail.com</a>
+            </EmailCTA>
+            
+
+
+         <SmWrapper>
+        <span>You can also find me on:</span>
+          <SmIcons>
+          <a className="sm-icon" href="http://github.com/elsahv"> 
+                <FaGithub />
+                </a>
+          <a className="sm-icon" href="https://linkedin.com/in/elsa-hovey"> 
+                <FaLinkedin />
+                </a>
+          <a className="sm-icon" href="https://www.instagram.com/elsahoveydevdesign/"> 
+                <FaInstagram />
+                </a>
             </SmIcons>
-            </ExternalWrapper>
+            </SmWrapper>
+
+
+            </Wrapper>
     </>
   )
 }
