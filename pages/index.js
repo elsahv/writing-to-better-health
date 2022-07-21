@@ -8,7 +8,6 @@ import styled from 'styled-components'
 
 
 //STYLES 
-
 export const BlogTitle = styled.h2`
 display: flex;
 justify-content: center;
@@ -44,6 +43,7 @@ justify-content: center;
 flex-direction: column;
 padding: 45px 150px;
 margin-top: 100px;
+margin-bottom: 50px;
 text-align: center;
 // background: aquamarine;
 h2 {
@@ -56,7 +56,6 @@ export const RecentPostTitle = styled.h2`
 
 export const RecentBlogPostTitle = styled.h4`
 `
-
 //END STYLES
 
 
@@ -70,18 +69,13 @@ const Home = ({ posts }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
            <TopicsBannerCTA />  
-
-           <MostRecentWrapper>
+           {/* <MostRecentWrapper>
                    <RecentPostTitle>Most Recent Post</RecentPostTitle>
-
                    <RecentBlogPostTitle>First post</RecentBlogPostTitle>
                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam inventore ratione, est similique molestiae eius esse sit ea assumenda architecto aperiam nihil, doloribus quae debitis rerum quidem! Eaque, itaque quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam inventore ratione, est similique molestiae eius esse sit ea assumenda architecto aperiam nihil, doloribus quae debitis rerum quidem! Eaque, itaque qui Read More...</p>
-                   </MostRecentWrapper>
-                  
-               
-         <About />
-         <Contact />
- 
+                   </MostRecentWrapper> */}
+         {/* <About /> */}
+         {/* <Contact /> */}
    </>
   )
 }

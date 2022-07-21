@@ -1,16 +1,17 @@
-import styled from "styled-components";
+  import styled from "styled-components";
+
 
 
 
 export const Wrapper = styled.div`
-  margin-top: 120px;
-  width: 100%;
+// background: green;
   display: flex;
   justify-content: center;
   // background: teal;
+  margin-top: 100px;
   
   @media only screen and (max-width: 1024px) {
-   margin-top: 40px; 
+   margin-top: 60px; 
  }
 `;
 
@@ -19,12 +20,12 @@ export const Grid = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 2em;
 
-  @media only screen and (max-width: 1024px) {
-    grid-template-columns: 1fr 1fr;
+  @media only screen and (max-width: 834px) {
+    // grid-template-columns: 1fr 1fr;
     grid-gap: 1em;
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     grid-template-columns: 1fr;
 }
 `;
@@ -42,13 +43,13 @@ cursor: pointer;
   border: solid 2px black;
 
   @media only screen and (max-width: 1024px) {
-    width: 320px;
-    height: 270px;
+    width: 220px;
+    height: 170px;
   }
 
   @media only screen and (max-width: 834px) {
-    width: 240px;
-    height: 210px;
+    width: 180px;
+    height: 150px;
   }
 
 `;

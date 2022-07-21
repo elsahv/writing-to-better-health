@@ -18,15 +18,13 @@ padding-right: 10px;
  
 
 @media only screen and (max-width: 1024px) {
- padding: auto;
- margin-left: 260px;
+  padding-left: 200px;
 }
 
 @media only screen and (max-width: 531px) {
  display: flex;
  justify-content: center;
- padding: auto;
- margin: auto;
+ padding: 0;
 }
 `
 

@@ -1,43 +1,21 @@
 import Head from 'next/head'
 import Link from "next/link"
 import { sanityClient, urlFor } from "../client"
-import styled from 'styled-components'
 import Navbar from '../components/Navbar'
 
+import {
+  Wrapper,
+  Grid,
+  NavbarWrapper,
+  ImageWrapper,
+  PostsContainer,
+  PostTitle
+} from '../components/styles/CategoryPages.styled.js'
+import styled from 'styled-components'
 
 
 //STYLES
- const Wrapper = styled.div`
-  // background: teal;
-  width: 100%;  
-  display: flex;
-  justify-content: center;
-`
-
-const Grid = styled.div`
-display: grid;
-grid-template-columns: 200px 1fr;
-grid-template-areas: 
-'a b';
-
-@media only screen and (max-width: 531px) {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: 
-  'a' 
-  'b';
-}
-`
-
-const NavbarWrapper = styled.div`
-grid-area: a;
-// background: coral;
-display: flex;
-justify-content: center;
-padding-top: 100px; 
-`
-
+ 
 
 export const BlogTitle = styled.h2`
 display: flex;
@@ -49,27 +27,8 @@ margin-bottom: 5px;
 padding: 10px;
 border: solid 2px black;
 `
-
-export const ImageWrapper = styled.div`
-display: flex;
-justify-content: center;
- .img {
-  border: solid 2px black;
- }
-`
-
-export const PostsContainer = styled.div`
-// background: teal;
- display: grid;
- grid-template-columns: repeat(3, 400px);
- grid-area: b;
-`
-
-export const PostTitle = styled.h3`
-text-align: center;
-padding: 10px;
-color: teal;
-`
+ 
+ 
 //END STYLES
 
 
@@ -87,7 +46,7 @@ const Biochemistry = ({ posts }) => {
 
                     <NavbarWrapper>
                     <Navbar />
-                    </NavbarWrapper>
+                    </NavbarWrapper>  
                     
                    <PostsContainer>
                    {posts &&
@@ -99,7 +58,7 @@ const Biochemistry = ({ posts }) => {
                        src={urlFor(post.biochemImage)}
                        className="img"
                        width={350}
-                       height={320}
+                       height={300}
                        />
                       </ImageWrapper>
                       </span>

@@ -16,7 +16,6 @@ const Title = styled.h3`
 font-size: 25px;
 text-align: center;
 padding: 15px;
-background: coral;
 `
 const Content = styled.p`
 font-size: 20px;

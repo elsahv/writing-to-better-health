@@ -17,7 +17,7 @@ import {
 const Header = () => {
   return (
     <NavSection>
-<MailchimpForm />
+{/* <MailchimpForm /> */}
 <Menu>
  <Logo> 
  <Link href="/">

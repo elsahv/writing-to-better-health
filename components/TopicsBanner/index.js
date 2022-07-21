@@ -13,11 +13,11 @@ import {
   ImageWrapper
 } from './topicsBanner.styled'
 
+  
 const TopicsBannerCTA = () => {
   return (
     <>
-    {/* Categories */}
-      <Wrapper>
+      <Wrapper> 
         <Grid>
           {/* motion up */}
         <Link href="/cooking-notes">
