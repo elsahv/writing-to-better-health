@@ -12,7 +12,7 @@ import styled from 'styled-components'
  const BlogWrapper = styled.div`
   background: teal;
   width: 100%;  
-  margin-top: 400px;
+  margin-top: 200px;
 `
 
 export const BlogTitle = styled.h2`
@@ -43,6 +43,26 @@ padding: 50px;
 export const PostTitle = styled.h3`
 text-align: center;
 `
+
+export const MostRecentWrapper = styled.div`
+display: flex;
+justify-content: center;
+flex-direction: column;
+padding: 45px 150px;
+margin-top: 100px;
+text-align: center;
+// background: aquamarine;
+h2 {
+  padding-bottom: 15px;
+}
+`
+
+export const RecentPostTitle = styled.h2`
+`
+
+export const RecentBlogPostTitle = styled.h4`
+`
+
 //END STYLES
 
 
@@ -56,6 +76,15 @@ const Home = ({ posts }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
            <TopicsBannerCTA />  
+
+           <MostRecentWrapper>
+                   <RecentPostTitle>Most Recent Post</RecentPostTitle>
+
+                   <RecentBlogPostTitle>First post</RecentBlogPostTitle>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam inventore ratione, est similique molestiae eius esse sit ea assumenda architecto aperiam nihil, doloribus quae debitis rerum quidem! Eaque, itaque quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam inventore ratione, est similique molestiae eius esse sit ea assumenda architecto aperiam nihil, doloribus quae debitis rerum quidem! Eaque, itaque qui Read More...</p>
+                   </MostRecentWrapper>
+
+
                    <BlogWrapper> 
                   <BlogTitle id="blog">Blog</BlogTitle>
                    
@@ -76,6 +105,8 @@ const Home = ({ posts }) => {
                     }
                     </PostsContainer>
                    </BlogWrapper>
+
+               
          <About />
          <Contact />
     </>

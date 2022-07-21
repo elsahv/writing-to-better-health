@@ -8,7 +8,8 @@ import styled from 'styled-components'
 export const ExternalWrapper = styled.div`
 text-align: center;
 font-weight: bold;
-height: 900px;
+margin-top: 150px;
+padding: 200px;
 h2 {
   padding: 10px;
 }
