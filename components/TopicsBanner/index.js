@@ -18,6 +18,7 @@ const TopicsBannerCTA = () => {
     <>
       <Wrapper>
         <Grid>
+          {/* motion up */}
         <Link href="/cooking-notes">
           <TopicWrapper>
             <TopicTitle>Cooking Notes</TopicTitle>
@@ -27,21 +28,32 @@ const TopicsBannerCTA = () => {
           </TopicWrapper>
           </Link>
 
-          <Link href="/nutritional-biochemistry">
+          {/* motion right*/}
+          <Link href="/biochemistry">
           <TopicWrapper>
-            <TopicTitle>Nutritional Biochemistry</TopicTitle>
+            <TopicTitle>Biochemistry</TopicTitle>
+
+
+
+
             <ImageWrapper>
               <Image src={ImgTwo} layout="fill" />
             </ImageWrapper>
           </TopicWrapper>
           </Link>
 
+
+          {/* motion down*/}
+
+          <Link href="/#blog">
           <TopicWrapper>
             <TopicTitle>Blog</TopicTitle>
             <ImageWrapper>
               <Image src={ImgThree} layout="fill" />
             </ImageWrapper>
           </TopicWrapper>
+          </Link>
+
         </Grid>
       </Wrapper>
     </>

@@ -9,7 +9,8 @@ import {
   ContentWrapper,  
   BlogWrapper,
   CookingNotesWrapper,
-  BiochemistryWrapper
+  BiochemistryWrapper,
+  TopicTitle
 } from '../components/styles/Index.styled'
   
 
@@ -27,20 +28,25 @@ const Home = ({ posts }) => {
 
 
                   <ContentWrapper>
-                    Blog
                    <BlogWrapper> 
+                   <TopicTitle id="blog">
+                    Blog
+                    </TopicTitle>
                    {posts &&
-                    posts.map((post) => (
-                      <div>
+                    posts.map((post, index) => (
+                      <span key={index}>
                       <h1>{post.postTitle}</h1>
                       <div>{post.postDescription}</div>
-                      </div>
+                      <img src={urlFor(post.mainImage)} />
+                      </span>
                     ))
                     }
                    </BlogWrapper>
-
+{/* 
                     <CookingNotesWrapper> 
+                    <TopicTitle id="cooking-notes">
                       Cooking Notes
+                      </TopicTitle>
                     {posts &&
                       posts.map((post) => (
                         <div>
@@ -49,10 +55,12 @@ const Home = ({ posts }) => {
                         </div>
                       ))
                       }
-                    </CookingNotesWrapper>
+                    </CookingNotesWrapper> */}
 
-                    <BiochemistryWrapper> 
+                    {/* <BiochemistryWrapper> 
+                    <TopicTitle id="biochemistry">
                       Biochemistry
+                      </TopicTitle>
                    {posts &&
                     posts.map((post) => (
                       <div>
@@ -61,7 +69,7 @@ const Home = ({ posts }) => {
                       </div>
                     ))
                     }
-                   </BiochemistryWrapper>
+                   </BiochemistryWrapper> */}
                    </ContentWrapper>
          <About />
          <Contact />
@@ -71,7 +79,7 @@ const Home = ({ posts }) => {
 }
  
 export const getServerSideProps = async () => {
-  const query = '*[_type in ["blogPosts", "cookingNotes", "biochemistry"]]'
+  const query = '*[_type == "blogPosts"]'
   const posts = await sanityClient.fetch(query)
 
   if(!posts.length) {

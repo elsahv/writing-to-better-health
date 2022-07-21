@@ -3,7 +3,7 @@ import styled from 'styled-components'
 //STYLES
 
 export const ContentWrapper = styled.div`
-  background: green;
+  // background: green;
   margin-top: 400px;
  
 `
@@ -11,19 +11,16 @@ export const ContentWrapper = styled.div`
 
 export const BlogWrapper = styled.div`
   background: teal;
-  height: 400px;
   width: 100%;
 `
 
 export const CookingNotesWrapper = styled.div`
 background: pink;
-height: 400px;
 width: 100%;
 
 `
 export const BiochemistryWrapper = styled.div`
   background: coral;
-  height: 400px;
   width: 100%;
 `
 
@@ -31,11 +28,10 @@ export const BiochemistryWrapper = styled.div`
 
 
 
-export const BlogTitle = styled.h2`
+export const TopicTitle = styled.h2`
 display: flex;
 justify-content: center;
-background: coral;
-margin-top: 450px;
+// background: coral;
 font-size: 30px;
 padding: 10px;
 `
