@@ -18,6 +18,7 @@ const TopicsBannerCTA = () => {
     <>
       <Wrapper>
         <Grid>
+          
           {/* motion up */}
         <Link href="/cooking-notes">
           <TopicWrapper>

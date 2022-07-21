@@ -12,8 +12,8 @@ const Wrapper = styled.div`
 // background: maroon;
 padding-top: 10px;
 padding-bottom: 55px;
-margin-left: 360px;
-margin-right: 10px;
+padding-left: 360px;
+padding-right: 10px;
 
  
 

@@ -5,7 +5,6 @@ import styled from 'styled-components'
 export const ContentWrapper = styled.div`
   // background: green;
   margin-top: 400px;
- 
 `
 
 
