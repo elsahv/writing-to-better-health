@@ -6,13 +6,10 @@ import Contact from '../components/Contact'
 import TopicsBannerCTA from '../components/TopicsBanner'
 import About from '../components/About'
 import {
+  ContentWrapper,  
   BlogWrapper,
-  BlogTitle,
-  PostsWrapper,
-  SinglePost,
-  ImageWrapper,
-  Content,
-  Description
+  CookingNotesWrapper,
+  BiochemistryWrapper
 } from '../components/styles/Index.styled'
   
 
@@ -29,33 +26,43 @@ const Home = ({ posts }) => {
            <TopicsBannerCTA />
 
 
-           <BlogTitle>Blog</BlogTitle>
-           navigation
-            <BlogWrapper>
-              <PostsWrapper>  
-                  {posts &&
-                  posts.map((post) => (
-                    <SinglePost>
-                   <ImageWrapper>
-                      <img
-                      src={urlFor(post.mainImage)}
-                      width={200}
-                      height={200}
-                      className="blog-img"
-                      />
-                      </ImageWrapper>
-                      <Content>
-                      <h2>{post.title}</h2>
-                      <Description>{post.description}</Description>
-                      </Content>
-                    </SinglePost>
-                  ))
-                  }
-              </PostsWrapper>
-              </BlogWrapper>
-              <BlogTitle>Cooking Notes</BlogTitle>
+                  <ContentWrapper>
+                    Blog
+                   <BlogWrapper> 
+                   {posts &&
+                    posts.map((post) => (
+                      <div>
+                      <h1>{post.postTitle}</h1>
+                      <div>{post.postDescription}</div>
+                      </div>
+                    ))
+                    }
+                   </BlogWrapper>
 
-         {/* nutritional biochemistry */}
+                    <CookingNotesWrapper> 
+                      Cooking Notes
+                    {posts &&
+                      posts.map((post) => (
+                        <div>
+                        <h1>{post.cookTitle}</h1>
+                        <div>{post.cookDescription}</div>
+                        </div>
+                      ))
+                      }
+                    </CookingNotesWrapper>
+
+                    <BiochemistryWrapper> 
+                      Biochemistry
+                   {posts &&
+                    posts.map((post) => (
+                      <div>
+                      <h1>{post.biochemTitle}</h1>
+                      <div>{post.biochemDescription}</div>
+                      </div>
+                    ))
+                    }
+                   </BiochemistryWrapper>
+                   </ContentWrapper>
          <About />
          <Contact />
        
@@ -64,7 +71,7 @@ const Home = ({ posts }) => {
 }
  
 export const getServerSideProps = async () => {
-  const query = '*[_type in ["blogPosts", "cookingNotes", "]'
+  const query = '*[_type in ["blogPosts", "cookingNotes", "biochemistry"]]'
   const posts = await sanityClient.fetch(query)
 
   if(!posts.length) {

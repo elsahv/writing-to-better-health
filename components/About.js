@@ -18,7 +18,11 @@ height: 500px;
 
 const About = () => {
   return (
-    <Wrapper>About</Wrapper>
+    <Wrapper>
+      <div id="about">
+      About
+      </div>
+      </Wrapper>
   )
 }
 

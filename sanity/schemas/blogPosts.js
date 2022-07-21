@@ -4,8 +4,8 @@ export default {
     type: 'document',
     fields: [
       {
-        name: 'title',
-        title: 'Title',
+        name: 'postTitle',
+        title: 'Post Title',
         type: 'string'
       },
       {
@@ -13,7 +13,7 @@ export default {
         title: 'Slug',
         type: 'slug',
         options: {
-          source: 'title',
+          source: 'postTitle',
           maxLength: 96
         }
       },
@@ -26,8 +26,8 @@ export default {
         }
       },
       {
-        name: 'description',
-        title: 'Description',
+        name: 'postDescription',
+        title: 'Post Description',
         type: 'string'
       },
       {

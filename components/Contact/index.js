@@ -16,7 +16,9 @@ const ContactForm = () => {
     <>
     <ExternalWrapper>
     <Title>
+      <div id="contact">
     Contact Info
+    </div>
     </Title>
     <Wrapper>
        <p>I am currently available for work, you can reach me at:</p>

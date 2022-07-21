@@ -4,8 +4,8 @@ export default {
     type: 'document',
     fields: [
       {
-        name: 'title',
-        title: 'Title',
+        name: 'cookTitle',
+        title: 'Cooking Title',
         type: 'string',
       },
       {
@@ -13,13 +13,18 @@ export default {
         title: 'Slug',
         type: 'slug',
         options: {
-          source: 'title',
+          source: 'cookTitle',
           maxLength: 96,
         },
       },
       {
-        name: 'mainImage',
-        title: 'Main image',
+        name: 'cookDescription',
+        title: 'Cooking Description',
+        type: 'string'
+      },
+      {
+        name: 'cookImage',
+        title: 'Cooking Note Image',
         type: 'image',
         options: {
           hotspot: true,

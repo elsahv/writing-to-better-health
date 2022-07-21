@@ -1,13 +1,32 @@
 import styled from 'styled-components'
  
 //STYLES
-export const BlogWrapper = styled.div`
- display: flex;
- justify-content: center;
- margin: 40px 150px;
+
+export const ContentWrapper = styled.div`
+  background: green;
+  margin-top: 400px;
+ 
 `
 
- 
+
+export const BlogWrapper = styled.div`
+  background: teal;
+  height: 400px;
+  width: 100%;
+`
+
+export const CookingNotesWrapper = styled.div`
+background: pink;
+height: 400px;
+width: 100%;
+
+`
+export const BiochemistryWrapper = styled.div`
+  background: coral;
+  height: 400px;
+  width: 100%;
+`
+
 
 
 
@@ -22,17 +41,10 @@ padding: 10px;
 `
 
 export const PostsWrapper = styled.div`
-// background: green;
-display: grid;
-grid-template-columns: 1fr 1fr;
-grid-gap: 1em;  
+  
 `
 
 export const SinglePost = styled.div`
-background: teal;
-border: solid 2px black;
-display: flex;
-margin-top: 20px;
  
 `
 
@@ -45,14 +57,9 @@ export const ImageWrapper = styled.div`
 
 
 export const Content = styled.div`
- h2 {
-  text-align: center;
-  padding: 10px;
- }
 
 `
 export const Description = styled.div`
- padding: 25px;
 `
 
 //END STYLES
