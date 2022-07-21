@@ -1,5 +1,3 @@
-  
-
 import GlobalStyles from './styles/Global'
 import styled from 'styled-components'
 import Header from './Header'

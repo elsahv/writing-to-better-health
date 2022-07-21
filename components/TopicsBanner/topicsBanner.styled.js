@@ -20,12 +20,12 @@ export const Grid = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 2em;
 
-  @media only screen and (max-width: 834px) {
-    // grid-template-columns: 1fr 1fr;
+  @media only screen and (max-width: 1024px) {
+    grid-template-columns: 1fr 1fr;
     grid-gap: 1em;
   }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 600px) {
     grid-template-columns: 1fr;
 }
 `;
@@ -43,13 +43,13 @@ cursor: pointer;
   border: solid 2px black;
 
   @media only screen and (max-width: 1024px) {
-    width: 220px;
+    width: 270px;
     height: 170px;
   }
 
-  @media only screen and (max-width: 834px) {
-    width: 180px;
-    height: 150px;
+  @media only screen and (max-width: 768px) {
+    width: 240px;
+    height: 170px;
   }
 
 `;
