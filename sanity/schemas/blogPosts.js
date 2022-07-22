@@ -4,8 +4,8 @@ export default {
     type: 'document',
     fields: [
       {
-        name: 'postTitle',
-        title: 'Post Title',
+        name: 'title',
+        title: 'Title',
         type: 'string'
       },
       {
@@ -13,13 +13,13 @@ export default {
         title: 'Slug',
         type: 'slug',
         options: {
-          source: 'postTitle',
+          source: 'title',
           maxLength: 96
         }
       },
       {
-        name: 'mainImage',
-        title: 'Main image',
+        name: 'image',
+        title: 'Image',
         type: 'image',
         options: {
           hotspot: true

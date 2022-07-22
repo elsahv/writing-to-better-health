@@ -28,6 +28,7 @@ justify-content: center;
     height: 250px;
   }
 }
+
 @media only screen and (max-width: 600px) {
   .img {
     width: 350px;

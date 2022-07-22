@@ -1,11 +1,11 @@
-export default {
+  export default {
     name: 'cookingNotes',
     title: 'Cooking Notes',
     type: 'document',
     fields: [
       {
-        name: 'cookTitle',
-        title: 'Cooking Title',
+        name: 'title',
+        title: 'Title',
         type: 'string',
       },
       {
@@ -13,18 +13,18 @@ export default {
         title: 'Slug',
         type: 'slug',
         options: {
-          source: 'cookTitle',
+          source: 'title',
           maxLength: 96,
         },
       },
       {
-        name: 'cookDescription',
-        title: 'Cooking Description',
+        name: 'description',
+        title: 'Description',
         type: 'string'
       },
       {
-        name: 'cookImage',
-        title: 'Cooking Note Image',
+        name: 'image',
+        title: 'Image',
         type: 'image',
         options: {
           hotspot: true,

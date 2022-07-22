@@ -8,29 +8,29 @@ import About from '../components/About'
 import styled from 'styled-components'
 
 
+const Wrapper = styled.div`
+ margin: 390px 50px 10px 50px;
+ padding: 10px;
+ background: teal;
+`
+
 
 const Title = styled.h2`
 display: flex;
 justify-content: center;
-margin-top: 390px;
 background: orange;
 border: solid 2px black;
-padding: 10px;
 
 @media only screen and (max-width: 600px) {
 margin-top: 70px;
 }
 `
 
-const Wrapper = styled.div`
- padding: 20px 100px;
- background: teal;
-`
  
 
 
 const Container = styled.div`
-//  background: green;
+cursor: pointer;
  display: grid;
  grid-template-columns: repeat(4, 1fr);
  grid-gap: 1em;
@@ -83,16 +83,18 @@ const Home = ({ posts }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
            <TopicsBannerCTA />  
-             <div id="blog">
-           <Title>Recent Posts</Title>
-           </div>
                    <Wrapper>
+                   <div id="blog">
+                    <Title>Recent Posts</Title>
+                    </div>
                     <Container>
                    {posts &&
                     posts.map((post, index) => (
+                      <Link href={`post/${post.slug.current}`}>
+
                       <span key={index}>
                        <PostContent>
-                      <PostTitle>{post.postTitle}</PostTitle>
+                      <PostTitle>{post.title}</PostTitle>
                       <ImgWrapper>
                           <img
                           src={urlFor(post.mainImage)}
@@ -107,12 +109,15 @@ const Home = ({ posts }) => {
                        </Description>
                        </PostContent>
                       </span>
+                      </Link>
+
                     ))
                     }
                     </Container>
                     </Wrapper>
-         <About />
          <Contact />
+         <About />
+
    </>
   )
 }

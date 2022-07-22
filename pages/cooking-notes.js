@@ -3,32 +3,15 @@ import Link from "next/link"
 import { sanityClient, urlFor } from "../client"
 
 import {
+  BlogTitle,
   Wrapper,
-  Grid,
-  NavbarWrapper,
   ImageWrapper,
   PostsContainer,
   PostTitle
 } from '../components/styles/CategoryPages.styled.js'
-import styled from 'styled-components'
 
 
-//STYLES 
-
-export const BlogTitle = styled.h2`
-display: flex;
-justify-content: center;
-background: teal;
-font-size: 30px;
-margin-top: 50px;
-margin-bottom: 5px;
-padding: 10px;
-// text-decoration: underline;
-border: solid 2px black;
-`
  
- 
-//END STYLES
 
 
 const CookingNotes = ({ posts }) => {
@@ -41,20 +24,21 @@ const CookingNotes = ({ posts }) => {
       <BlogTitle>Cooking Notes</BlogTitle>
           
            <Wrapper> 
-                 
                    <PostsContainer>
                    {posts &&
                     posts.map((post, index) => (
+                      <Link href={`post/${post.slug.current}`}>
                       <span key={index}>
-                      <PostTitle>{post.cookTitle}</PostTitle>
+                      <PostTitle>{post.title}</PostTitle>
                       <ImageWrapper>
                       <img
-                       src={urlFor(post.cookImage)}
+                       src={urlFor(post.image)}
                        className="img"
                        layout="fill"
                        />
                       </ImageWrapper>
                       </span>
+                      </Link>
                     ))
                     }
                     </PostsContainer>

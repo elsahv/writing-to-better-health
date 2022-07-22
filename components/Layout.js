@@ -21,9 +21,8 @@ padding-left: 340px;
 
 
 
-@media only screen and (max-width: 531px) {
- display: flex;
- justify-content: center;
+@media only screen and (max-width: 600px) {
+ 
  padding: 0;
 }
 `

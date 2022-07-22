@@ -4,8 +4,8 @@ export default {
     type: 'document',
     fields: [
       {
-        name: 'biochemTitle',
-        title: 'Biochemistry Title',
+        name: 'title',
+        title: 'Title',
         type: 'string',
       },
       {
@@ -13,18 +13,18 @@ export default {
         title: 'Slug',
         type: 'slug',
         options: {
-          source: 'biochemTitle',
+          source: 'title',
           maxLength: 96,
         },
       },
       {
-        name: 'biochemDescription',
-        title: 'Biochemistry Description',
+        name: 'description',
+        title: 'Description',
         type: 'string'
       },
       {
-        name: 'biochemImage',
-        title: 'Biochemistry image',
+        name: 'image',
+        title: 'Image',
         type: 'image',
         options: {
           hotspot: true,
