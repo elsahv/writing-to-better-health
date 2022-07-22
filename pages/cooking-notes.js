@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Link from "next/link"
 import { sanityClient, urlFor } from "../client"
-import Navbar from '../components/Navbar'
 
 import {
   Wrapper,
@@ -42,12 +41,7 @@ const CookingNotes = ({ posts }) => {
       <BlogTitle>Cooking Notes</BlogTitle>
           
            <Wrapper> 
-                 <Grid>
-
-                    <NavbarWrapper>
-                    <Navbar />
-                    </NavbarWrapper>
-                    
+                 
                    <PostsContainer>
                    {posts &&
                     posts.map((post, index) => (
@@ -57,16 +51,13 @@ const CookingNotes = ({ posts }) => {
                       <img
                        src={urlFor(post.cookImage)}
                        className="img"
-                      //  width={350}
-                      //  height={300}
-                      layout="fill"
+                       layout="fill"
                        />
                       </ImageWrapper>
                       </span>
                     ))
                     }
                     </PostsContainer>
-                    </Grid>
                    </Wrapper>
     </>
   )

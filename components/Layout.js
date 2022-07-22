@@ -19,6 +19,8 @@ padding-left: 340px;
   padding-left: 200px;
 }
 
+
+
 @media only screen and (max-width: 531px) {
  display: flex;
  justify-content: center;

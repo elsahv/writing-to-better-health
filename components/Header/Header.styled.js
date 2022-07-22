@@ -23,7 +23,7 @@ text-decoration: none;
   width: 200px;
 }
 
-@media only screen and (max-width: 531px) {
+@media only screen and (max-width: 600px) {
   display: none;
   }
 

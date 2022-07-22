@@ -28,9 +28,9 @@ const Header = () => {
    An illustrative blog about food and mental wellness...
    </Quote> 
    <NavLinks>
-       <Link href="/">Home</Link>
+       <Link href="/cooking-notes">Cooking Notes</Link>
+       <Link href="/biochemistry">Biochemistry</Link>
        <Link href="/#blog">Blog</Link>
-       <Link href="/#about">About</Link>
        <Link href="/#contact">Contact</Link>
        
           <SmIcons> 

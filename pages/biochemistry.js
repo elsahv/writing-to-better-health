@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Link from "next/link"
 import { sanityClient, urlFor } from "../client"
-import Navbar from '../components/Navbar'
 
 import {
   Wrapper,
@@ -43,11 +42,8 @@ const Biochemistry = ({ posts }) => {
       </Head>
       <BlogTitle>Biochemistry</BlogTitle>
                    <Wrapper> 
-                    <Grid>
 
-                    <NavbarWrapper>
-                    <Navbar />
-                    </NavbarWrapper>  
+         
                     
                    <PostsContainer>
                    {posts &&
@@ -67,7 +63,6 @@ const Biochemistry = ({ posts }) => {
                     ))
                     }
                     </PostsContainer>
-                    </Grid>
                    </Wrapper>
     </>
   )
