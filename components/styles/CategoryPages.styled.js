@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+
+
 export const Wrapper = styled.div`
 // background: teal;
 margin-top: 35px;
@@ -9,8 +11,9 @@ justify-content: center;
 `
 
 export const Grid = styled.div`
+// background: maroon;
 display: grid;
-grid-template-columns: 200px 1fr;
+grid-template-columns: 250px 1fr;
 grid-template-areas: 
 'a b';
 
@@ -23,38 +26,37 @@ grid-template-areas:
   'b';
 }
 `
+
+
 export const NavbarWrapper = styled.div`
 grid-area: a;
-// background: coral;
-display: flex;
-justify-content: center;
 padding-top: 100px; 
+  // border-right: solid 2px black;
 `
+
+
 export const ImageWrapper = styled.div`
-display: flex;
-justify-content: center;
+  position: relative;
  .img {
   border: solid 2px black;
+  width: 280px;
+  height: 270px;
  }
 `
 
 export const PostsContainer = styled.div`
 // background: teal;
  display: grid;
- grid-template-columns: repeat(3, 400px);
+ grid-template-columns: repeat(4, 300px);
  grid-area: b;
  cursor: pointer;
+//  padding-left: 40px;
 `
 
 export const PostTitle = styled.h3`
-text-align: center;
-padding: 5px 10px;
-color: aquamarine;
-background: teal;
-border-top: solid 2px black;
-border-left: solid 2px black;
-border-right: solid 2px black;
-margin: 30px 25px 0 25px;
-text-transform: capitalize; 
-font-size: 22px;
+// text-align: center;
+margin-top: 25px;
+margin-bottom: 5px;
+padding-left: 5px;
+text-transform: capitalize;
 `

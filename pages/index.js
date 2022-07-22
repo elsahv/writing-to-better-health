@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import Link from "next/link"
+import { sanityClient, urlFor } from "../client"
+
 import Contact from '../components/Contact'
 import TopicsBannerCTA from '../components/TopicsBanner'
 import About from '../components/About'
@@ -7,64 +9,70 @@ import styled from 'styled-components'
 
 
 
-//STYLES 
-export const MostRecentWrapper = styled.div`
+const Title = styled.h2`
 display: flex;
 justify-content: center;
-flex-direction: column;
-padding: 45px 150px;
-margin-top: 100px;
-margin-bottom: 50px;
-text-align: center;
-// background: aquamarine;
+margin-top: 390px;
+background: orange;
+border: solid 2px black;
+padding: 10px;
 
-@media only screen and (max-width: 1024px) {
-  padding: 0 40px;
+@media only screen and (max-width: 600px) {
+margin-top: 70px;
 }
 `
 
-
-export const BlogTitle = styled.h2`
-display: flex;
-justify-content: center;
-background: coral;
-font-size: 30px;
-padding: 10px;
-border: solid 2px black;
+const Wrapper = styled.div`
+ padding: 20px 100px;
+ background: teal;
 `
+ 
 
-export const ImageWrapper = styled.div`
-display: flex;
-justify-content: center;
- .img {
-  border: solid 2px black;
-  width: 320px;
-height: 220px;
- }
-`
 
-export const PostsContainer = styled.div`
+const Container = styled.div`
+//  background: green;
  display: grid;
  grid-template-columns: repeat(4, 1fr);
-padding: 50px;
+ grid-gap: 1em;
+
+ @media only screen and (max-width: 1024px) {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media only screen and (max-width: 600px) {
+  grid-template-columns: 1fr;
+}
 `
 
-export const PostTitle = styled.h3`
-text-align: center;
+const PostContent = styled.div`
+ 
+`
+
+ 
+const PostTitle = styled.h4`
+// text-align: center;
+padding: 5px 0;
+`
+const Description = styled.div`
+ padding: 5px 0;
 `
 
 
-export const RecentPostTitle = styled.h2`
-text-decoration: underline;
+const ImgWrapper = styled.div`
+position: relative;
+.img {
+  border: solid 2px black;
+  width: 300px;
+  height: 200px;
+}
+ 
+@media only screen and (max-width: 834px) {
+  .img {
+    width: 200px;
+    height: 150px;
+  }
+}
 `
-
-export const RecentBlogPostTitle = styled.h4`
-// color: teal;
-margin: 10px;
-`
-//END STYLES
-
-
 
 const Home = ({ posts }) => {
   return (
@@ -75,16 +83,61 @@ const Home = ({ posts }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
            <TopicsBannerCTA />  
-                   <MostRecentWrapper>
-                   <RecentPostTitle>Most Recent Post</RecentPostTitle>
-                   <RecentBlogPostTitle>First post</RecentBlogPostTitle>
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam inventore ratione, est similique molestiae eius esse sit ea assumenda architecto aperiam nihil, doloribus quae debitis rerum quidem! Eaque, itaque quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam inventore ratione, est similique molestiae eius esse sit ea assumenda architecto aperiam nihil, doloribus quae debitis rerum quidem! Eaque, itaque qui Read More...</p>
-                   </MostRecentWrapper>
+             <div id="blog">
+           <Title>Recent Posts</Title>
+           </div>
+                   <Wrapper>
+                    <Container>
+                   {posts &&
+                    posts.map((post, index) => (
+                      <span key={index}>
+                       <PostContent>
+                      <PostTitle>{post.postTitle}</PostTitle>
+                      <ImgWrapper>
+                          <img
+                          src={urlFor(post.mainImage)}
+                          className="img"
+                          // width={350}
+                          // height={200}
+                          layout="fill"
+                          />
+                       </ImgWrapper>
+                      <Description>
+                          Lorem ipsum, dolor sintur, asperiores fugit eos earum rerum! Accusantium, fugiat?
+                       </Description>
+                       </PostContent>
+                      </span>
+                    ))
+                    }
+                    </Container>
+                    </Wrapper>
          <About />
          <Contact />
    </>
   )
 }
   
+
+
+
+export const getServerSideProps = async () => {
+  const query = '*[_type == "blogPosts"]'
+  const posts = await sanityClient.fetch(query)
+
+  if(!posts.length) {
+    return {
+      props: {
+        posts: [],
+      },
+    }
+  } else {
+    return {
+      props: {
+        posts,
+      },
+    }
+  }
+}
+
 
 export default Home

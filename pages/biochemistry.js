@@ -20,11 +20,12 @@ import styled from 'styled-components'
 export const BlogTitle = styled.h2`
 display: flex;
 justify-content: center;
-background: teal;
+background: aquamarine;
 font-size: 30px;
 margin-top: 50px;
 margin-bottom: 5px;
 padding: 10px;
+// text-decoration: underline;
 border: solid 2px black;
 `
  
@@ -57,8 +58,9 @@ const Biochemistry = ({ posts }) => {
                       <img
                        src={urlFor(post.biochemImage)}
                        className="img"
-                       width={350}
-                       height={300}
+                      //  width={350}
+                      //  height={300}
+                      layout="fill"
                        />
                       </ImageWrapper>
                       </span>

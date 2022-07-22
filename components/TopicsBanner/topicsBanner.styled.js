@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   // background: teal;
-  margin-top: 100px;
+  margin-top: 140px;
   
   @media only screen and (max-width: 1024px) {
    margin-top: 60px; 
@@ -54,14 +54,14 @@ cursor: pointer;
 
 `;
 
-export const TopicTitle = styled.h2`
+export const TopicTitle = styled.h3`
   text-align: center;
   background: teal;
   border-top: solid 2px black;
   border-left: solid 2px black;
   border-right: solid 2px black;
-  padding: 5px 10px;
-  color: #fff;
+  padding: 10px;
+  color: aquamarine;
 
   @media only screen and (max-width: 1024px) {
     font-size: 15px;

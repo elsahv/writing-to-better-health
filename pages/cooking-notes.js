@@ -24,6 +24,7 @@ font-size: 30px;
 margin-top: 50px;
 margin-bottom: 5px;
 padding: 10px;
+// text-decoration: underline;
 border: solid 2px black;
 `
  
@@ -56,8 +57,9 @@ const CookingNotes = ({ posts }) => {
                       <img
                        src={urlFor(post.cookImage)}
                        className="img"
-                       width={350}
-                       height={300}
+                      //  width={350}
+                      //  height={300}
+                      layout="fill"
                        />
                       </ImageWrapper>
                       </span>

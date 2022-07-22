@@ -18,10 +18,6 @@ li {
     color: teal;
     padding: 2px 0;
 }
- a {
- }
- 
-
 `
 
 const Title = styled.h3`
@@ -29,7 +25,6 @@ text-decoration: underline;
 font-size: 25px;
 padding: 5px 0;
 `
-
 //END STYLES
 
 const Navbar = () => {
@@ -45,9 +40,9 @@ const Navbar = () => {
             <li>Biochemistry</li>
             </Link>
 
-            <Link href="/blog">
-            <li>Blog</li>
-            </Link>
+            {/* <Link href="/#blog">
+            <li>Blog Posts</li>
+            </Link> */}
 
         </ul>
     </Wrapper>
